@@ -1,0 +1,4052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gridlabs Studio - Premium web design and digital marketing agency serving small and medium businesses across India. We build digital empires that convert visitors into customers.">
+    <meta name="keywords" content="web design, digital marketing, e-commerce, brand identity, India, small business, website development">
+    <meta name="author" content="Gridlabs Studio">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Gridlabs Studio - We Build Digital Empires">
+    <meta property="og:description" content="Premium web design and digital marketing agency serving small and medium businesses across India">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gridlabsstudio.com">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gridlabs Studio - We Build Digital Empires">
+    <meta name="twitter:description" content="Premium web design and digital marketing agency serving small and medium businesses across India">
+    
+    <title>Gridlabs Studio - We Build Digital Empires | Premium Web Design India</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tabler Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons-sprite.svg">
+    
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+  /* Primitive Color Tokens */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  /* RGB versions for opacity control */
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+
+  /* Background color tokens (Light Mode) */
+  --color-bg-1: rgba(59, 130, 246, 0.08); /* Light blue */
+  --color-bg-2: rgba(245, 158, 11, 0.08); /* Light yellow */
+  --color-bg-3: rgba(34, 197, 94, 0.08); /* Light green */
+  --color-bg-4: rgba(239, 68, 68, 0.08); /* Light red */
+  --color-bg-5: rgba(147, 51, 234, 0.08); /* Light purple */
+  --color-bg-6: rgba(249, 115, 22, 0.08); /* Light orange */
+  --color-bg-7: rgba(236, 72, 153, 0.08); /* Light pink */
+  --color-bg-8: rgba(6, 182, 212, 0.08); /* Light cyan */
+
+  /* Semantic Color Tokens (Light Mode) */
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+  /* Common style patterns */
+  --focus-ring: 0 0 0 3px var(--color-focus-ring);
+  --focus-outline: 2px solid var(--color-primary);
+  --status-bg-opacity: 0.15;
+  --status-border-opacity: 0.25;
+  --select-caret-light: url("data:image/svg+xml,%3svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  --select-caret-dark: url("data:image/svg+xml,%3svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+
+  /* RGB versions for opacity control */
+  --color-success-rgb: 33, 128, 141;
+  --color-error-rgb: 192, 21, 47;
+  --color-warning-rgb: 168, 75, 47;
+  --color-info-rgb: 98, 108, 113;
+
+  /* Typography */
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, monospace;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --letter-spacing-tight: -0.01em;
+
+  /* Spacing */
+  --space-0: 0;
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
+    0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04),
+    0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+
+  /* Animation */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+}
+
+/* Dark mode colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* RGB versions for opacity control (Dark Mode) */
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+
+    /* Background color tokens (Dark Mode) */
+    --color-bg-1: rgba(29, 78, 216, 0.15); /* Dark blue */
+    --color-bg-2: rgba(180, 83, 9, 0.15); /* Dark yellow */
+    --color-bg-3: rgba(21, 128, 61, 0.15); /* Dark green */
+    --color-bg-4: rgba(185, 28, 28, 0.15); /* Dark red */
+    --color-bg-5: rgba(107, 33, 168, 0.15); /* Dark purple */
+    --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange */
+    --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink */
+    --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan */
+    
+    /* Semantic Color Tokens (Dark Mode) */
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-primary-active: var(--color-teal-800);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-error: var(--color-red-400);
+    --color-success: var(--color-teal-300);
+    --color-warning: var(--color-orange-400);
+    --color-info: var(--color-gray-300);
+    --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+    --color-btn-primary-text: var(--color-slate-900);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+    --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    --button-border-secondary: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-border-secondary: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8);
+
+    /* Common style patterns - updated for dark mode */
+    --focus-ring: 0 0 0 3px var(--color-focus-ring);
+    --focus-outline: 2px solid var(--color-primary);
+    --status-bg-opacity: 0.15;
+    --status-border-opacity: 0.25;
+    --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+
+    /* RGB versions for dark mode */
+    --color-success-rgb: var(--color-teal-300-rgb);
+    --color-error-rgb: var(--color-red-400-rgb);
+    --color-warning-rgb: var(--color-orange-400-rgb);
+    --color-info-rgb: var(--color-gray-300-rgb);
+  }
+}
+
+/* Data attribute for manual theme switching */
+[data-color-scheme="dark"] {
+  /* RGB versions for opacity control (dark mode) */
+  --color-gray-400-rgb: 119, 124, 124;
+  --color-teal-300-rgb: 50, 184, 198;
+  --color-gray-300-rgb: 167, 169, 169;
+  --color-gray-200-rgb: 245, 245, 245;
+
+  /* Colorful background palette - Dark Mode */
+  --color-bg-1: rgba(29, 78, 216, 0.15); /* Dark blue */
+  --color-bg-2: rgba(180, 83, 9, 0.15); /* Dark yellow */
+  --color-bg-3: rgba(21, 128, 61, 0.15); /* Dark green */
+  --color-bg-4: rgba(185, 28, 28, 0.15); /* Dark red */
+  --color-bg-5: rgba(107, 33, 168, 0.15); /* Dark purple */
+  --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange */
+  --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink */
+  --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan */
+  
+  /* Semantic Color Tokens (Dark Mode) */
+  --color-background: var(--color-charcoal-700);
+  --color-surface: var(--color-charcoal-800);
+  --color-text: var(--color-gray-200);
+  --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+  --color-primary: var(--color-teal-300);
+  --color-primary-hover: var(--color-teal-400);
+  --color-primary-active: var(--color-teal-800);
+  --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+  --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+  --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+  --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+  --color-error: var(--color-red-400);
+  --color-success: var(--color-teal-300);
+  --color-warning: var(--color-orange-400);
+  --color-info: var(--color-gray-300);
+  --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+  --color-btn-primary-text: var(--color-slate-900);
+  --color-card-border: rgba(var(--color-gray-400-rgb), 0.15);
+  --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  --color-border-secondary: rgba(var(--color-gray-400-rgb), 0.2);
+  --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8);
+
+  /* Common style patterns - updated for dark mode */
+  --focus-ring: 0 0 0 3px var(--color-focus-ring);
+  --focus-outline: 2px solid var(--color-primary);
+  --status-bg-opacity: 0.15;
+  --status-border-opacity: 0.25;
+  --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+
+  /* RGB versions for dark mode */
+  --color-success-rgb: var(--color-teal-300-rgb);
+  --color-error-rgb: var(--color-red-400-rgb);
+  --color-warning-rgb: var(--color-orange-400-rgb);
+  --color-info-rgb: var(--color-gray-300-rgb);
+}
+
+[data-color-scheme="light"] {
+  /* RGB versions for opacity control (light mode) */
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  
+  /* Semantic Color Tokens (Light Mode) */
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+
+  /* RGB versions for light mode */
+  --color-success-rgb: var(--color-teal-500-rgb);
+  --color-error-rgb: var(--color-red-500-rgb);
+  --color-warning-rgb: var(--color-orange-500-rgb);
+  --color-info-rgb: var(--color-slate-500-rgb);
+}
+
+/* Base styles */
+html {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+}
+h2 {
+  font-size: var(--font-size-3xl);
+}
+h3 {
+  font-size: var(--font-size-2xl);
+}
+h4 {
+  font-size: var(--font-size-xl);
+}
+h5 {
+  font-size: var(--font-size-lg);
+}
+h6 {
+  font-size: var(--font-size-md);
+}
+
+p {
+  margin: 0 0 var(--space-16) 0;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+code,
+pre {
+  font-family: var(--font-family-mono);
+  font-size: calc(var(--font-size-base) * 0.95);
+  background-color: var(--color-secondary);
+  border-radius: var(--radius-sm);
+}
+
+code {
+  padding: var(--space-1) var(--space-4);
+}
+
+pre {
+  padding: var(--space-16);
+  margin: var(--space-16) 0;
+  overflow: auto;
+  border: 1px solid var(--color-border);
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-standard);
+  border: none;
+  text-decoration: none;
+  position: relative;
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+}
+
+.btn--primary:hover {
+  background: var(--color-primary-hover);
+}
+
+.btn--primary:active {
+  background: var(--color-primary-active);
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.btn--secondary:hover {
+  background: var(--color-secondary-hover);
+}
+
+.btn--secondary:active {
+  background: var(--color-secondary-active);
+}
+
+.btn--outline {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.btn--outline:hover {
+  background: var(--color-secondary);
+}
+
+.btn--sm {
+  padding: var(--space-4) var(--space-12);
+  font-size: var(--font-size-sm);
+  border-radius: var(--radius-sm);
+}
+
+.btn--lg {
+  padding: var(--space-10) var(--space-20);
+  font-size: var(--font-size-lg);
+  border-radius: var(--radius-md);
+}
+
+.btn--full-width {
+  width: 100%;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Form elements */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: var(--space-8) var(--space-12);
+  font-size: var(--font-size-md);
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  transition: border-color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard);
+}
+
+textarea.form-control {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+}
+
+select.form-control {
+  padding: var(--space-8) var(--space-12);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: var(--select-caret-light);
+  background-repeat: no-repeat;
+  background-position: right var(--space-12) center;
+  background-size: 16px;
+  padding-right: var(--space-32);
+}
+
+/* Add a dark mode specific caret */
+@media (prefers-color-scheme: dark) {
+  select.form-control {
+    background-image: var(--select-caret-dark);
+  }
+}
+
+/* Also handle data-color-scheme */
+[data-color-scheme="dark"] select.form-control {
+  background-image: var(--select-caret-dark);
+}
+
+[data-color-scheme="light"] select.form-control {
+  background-image: var(--select-caret-light);
+}
+
+.form-control:focus {
+  border-color: var(--color-primary);
+  outline: var(--focus-outline);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: var(--space-8);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+}
+
+.form-group {
+  margin-bottom: var(--space-16);
+}
+
+/* Card component */
+.card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: box-shadow var(--duration-normal) var(--ease-standard);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card__body {
+  padding: var(--space-16);
+}
+
+.card__header,
+.card__footer {
+  padding: var(--space-16);
+  border-bottom: 1px solid var(--color-card-border-inner);
+}
+
+/* Status indicators - simplified with CSS variables */
+.status {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-6) var(--space-12);
+  border-radius: var(--radius-full);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+}
+
+.status--success {
+  background-color: rgba(
+    var(--color-success-rgb, 33, 128, 141),
+    var(--status-bg-opacity)
+  );
+  color: var(--color-success);
+  border: 1px solid
+    rgba(var(--color-success-rgb, 33, 128, 141), var(--status-border-opacity));
+}
+
+.status--error {
+  background-color: rgba(
+    var(--color-error-rgb, 192, 21, 47),
+    var(--status-bg-opacity)
+  );
+  color: var(--color-error);
+  border: 1px solid
+    rgba(var(--color-error-rgb, 192, 21, 47), var(--status-border-opacity));
+}
+
+.status--warning {
+  background-color: rgba(
+    var(--color-warning-rgb, 168, 75, 47),
+    var(--status-bg-opacity)
+  );
+  color: var(--color-warning);
+  border: 1px solid
+    rgba(var(--color-warning-rgb, 168, 75, 47), var(--status-border-opacity));
+}
+
+.status--info {
+  background-color: rgba(
+    var(--color-info-rgb, 98, 108, 113),
+    var(--status-bg-opacity)
+  );
+  color: var(--color-info);
+  border: 1px solid
+    rgba(var(--color-info-rgb, 98, 108, 113), var(--status-border-opacity));
+}
+
+/* Container layout */
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--space-16);
+  padding-left: var(--space-16);
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: var(--container-sm);
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: var(--container-md);
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: var(--container-lg);
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: var(--container-xl);
+  }
+}
+
+/* Utility classes */
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-4 {
+  gap: var(--space-4);
+}
+.gap-8 {
+  gap: var(--space-8);
+}
+.gap-16 {
+  gap: var(--space-16);
+}
+
+.m-0 {
+  margin: 0;
+}
+.mt-8 {
+  margin-top: var(--space-8);
+}
+.mb-8 {
+  margin-bottom: var(--space-8);
+}
+.mx-8 {
+  margin-left: var(--space-8);
+  margin-right: var(--space-8);
+}
+.my-8 {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.p-0 {
+  padding: 0;
+}
+.py-8 {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
+}
+.px-8 {
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
+}
+.py-16 {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+}
+.px-16 {
+  padding-left: var(--space-16);
+  padding-right: var(--space-16);
+}
+
+.block {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: 2px;
+}
+
+/* Dark mode specifics */
+[data-color-scheme="dark"] .btn--outline {
+  border: 1px solid var(--color-border-secondary);
+}
+
+@font-face {
+  font-family: 'FKGroteskNeue';
+  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2')
+    format('woff2');
+}
+
+/* END PERPLEXITY DESIGN SYSTEM */
+/* Additional Custom Styles for Gridlabs Studio */
+
+/* Font Integration */
+.font-poppins {
+  font-family: 'Poppins', var(--font-family-base);
+}
+
+.font-inter {
+  font-family: 'Inter', var(--font-family-base);
+}
+
+/* Theme System */
+:root {
+  /* Default Paint Blue Theme */
+  --theme-primary: #2563eb;
+  --theme-secondary: #1e40af;
+  --theme-accent: #60a5fa;
+}
+
+[data-theme="paintBlue"] {
+  --theme-primary: #2563eb;
+  --theme-secondary: #1e40af;
+  --theme-accent: #60a5fa;
+}
+
+[data-theme="woodBrown"] {
+  --theme-primary: #92400e;
+  --theme-secondary: #78350f;
+  --theme-accent: #d97706;
+}
+
+[data-theme="cementGrey"] {
+  --theme-primary: #6b7280;
+  --theme-secondary: #4b5563;
+  --theme-accent: #9ca3af;
+}
+
+/* Header Styles */
+#header {
+  background: rgba(var(--color-surface), 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-card-border);
+}
+
+#header.scrolled {
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+}
+
+.nav-link {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  transition: color var(--duration-fast) var(--ease-standard);
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--theme-primary);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--theme-primary);
+  transition: width var(--duration-normal) var(--ease-standard);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Theme Switcher */
+.theme-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-standard);
+}
+
+.theme-btn:hover {
+  transform: scale(1.1);
+}
+
+.theme-btn.active {
+  border-color: var(--theme-primary);
+  box-shadow: 0 0 0 2px rgba(var(--theme-primary), 0.2);
+}
+
+.theme-preview-btn {
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-standard);
+  display: flex;
+  align-items: center;
+}
+
+.theme-preview-btn:hover {
+  background: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+.theme-preview-btn.active {
+  background: var(--theme-primary);
+  color: white;
+  border-color: var(--theme-primary);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-surface) 100%);
+  position: relative;
+}
+
+.hero-bg {
+  background: radial-gradient(circle at 30% 20%, rgba(var(--theme-primary), 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 70% 80%, rgba(var(--theme-accent), 0.1) 0%, transparent 50%);
+}
+
+.floating-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.6;
+  animation: float 6s ease-in-out infinite;
+}
+
+.blob-1 {
+  width: 300px;
+  height: 300px;
+  background: var(--theme-primary);
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.blob-2 {
+  width: 200px;
+  height: 200px;
+  background: var(--theme-accent);
+  top: 60%;
+  right: 20%;
+  animation-delay: 2s;
+}
+
+.blob-3 {
+  width: 150px;
+  height: 150px;
+  background: var(--theme-secondary);
+  bottom: 20%;
+  left: 60%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-20px) rotate(90deg); }
+  50% { transform: translateY(-10px) rotate(180deg); }
+  75% { transform: translateY(-30px) rotate(270deg); }
+}
+
+.hero-title {
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hindi-quote {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.hindi-quote::before,
+.hindi-quote::after {
+  content: '"';
+  font-size: 1.5em;
+  color: var(--theme-primary);
+  opacity: 0.7;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-secondary) 100%);
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-standard);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(var(--theme-primary), 0.3);
+}
+
+.btn-primary.glow-effect {
+  box-shadow: 0 0 20px rgba(var(--theme-primary), 0.4);
+}
+
+.btn-primary.glow-effect:hover {
+  box-shadow: 0 0 30px rgba(var(--theme-primary), 0.6);
+}
+
+.btn-secondary {
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 2px solid var(--color-border);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.btn-secondary:hover {
+  background: var(--theme-primary);
+  color: white;
+  border-color: var(--theme-primary);
+  transform: translateY(-2px);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  cursor: pointer;
+}
+
+.bounce-animation {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+/* Animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+/* Service Cards */
+.service-card {
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.service-card:hover {
+  box-shadow: 0 20px 40px rgba(var(--theme-primary), 0.1);
+}
+
+.service-shine {
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+  transform: translateX(-100%);
+}
+
+.service-card:hover .service-shine {
+  transform: translateX(100%);
+  transition: transform 0.6s ease-out;
+}
+
+@keyframes icon-bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.group-hover\:bounce:hover {
+  animation: icon-bounce 0.5s ease-in-out;
+}
+
+/* About Section */
+.about-image-container {
+  position: relative;
+}
+
+.layered-image {
+  border: 3px solid var(--theme-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.layered-image::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(var(--theme-primary), 0.1), transparent);
+  transform: rotate(45deg);
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+.floating-element {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Counter Animation */
+.counter {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Before/After Slider */
+.before-after-slider {
+  overflow: hidden;
+}
+
+.before-after-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.after-image {
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+  transition: clip-path 0.3s ease-out;
+}
+
+.slider-handle {
+  transition: transform 0.2s ease-out;
+  user-select: none;
+}
+
+.slider-handle:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.clip-path-right {
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+}
+
+/* Process Timeline */
+.process-step {
+  position: relative;
+}
+
+.process-icon {
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.process-arrow {
+  position: relative;
+  top: 40px;
+}
+
+/* Portfolio Gallery */
+.portfolio-item {
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.portfolio-item:hover {
+  transform: translateY(-8px);
+}
+
+.portfolio-overlay {
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+/* Testimonial Carousel */
+.testimonial-carousel {
+  position: relative;
+}
+
+.testimonial-slide {
+  display: none;
+}
+
+.testimonial-slide.active {
+  display: block;
+  animation: fade-in 0.5s ease-out;
+}
+
+.testimonial-card {
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.testimonial-avatar {
+  background: linear-gradient(135deg, var(--theme-primary), var(--theme-accent));
+}
+
+/* Logo Strip */
+.logo-strip {
+  mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+}
+
+.logo-container {
+  animation: scroll-infinite 20s linear infinite;
+}
+
+@keyframes scroll-infinite {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.logo-item {
+  flex-shrink: 0;
+}
+
+/* Business Status */
+#businessStatus {
+  transition: all var(--duration-fast) var(--ease-standard);
+}
+
+#statusIndicator {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Contact Form */
+.contact-form {
+  position: relative;
+}
+
+.form-control:focus {
+  border-color: var(--theme-primary);
+  box-shadow: 0 0 0 3px rgba(var(--theme-primary), 0.1);
+}
+
+/* Footer */
+.footer-glassmorphism {
+  position: relative;
+}
+
+.social-link {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-secondary);
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all var(--duration-fast) var(--ease-standard);
+}
+
+.social-link:hover {
+  background: var(--theme-primary);
+  transform: translateY(-2px);
+}
+
+.footer-link {
+  color: var(--color-text-secondary);
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+.footer-link:hover {
+  color: var(--theme-primary);
+}
+
+/* Floating Action Buttons */
+.whatsapp-btn {
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4);
+}
+
+.sticky-cta {
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.sticky-cta:hover {
+  transform: scale(1.05);
+}
+
+.voice-btn {
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.voice-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(147, 51, 234, 0.4);
+}
+
+.pulse-animation {
+  animation: pulse-scale 2s infinite;
+}
+
+@keyframes pulse-scale {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* WhatsApp Options */
+#whatsappOptions {
+  animation: slide-up 0.3s ease-out;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.whatsapp-option {
+  transition: all var(--duration-fast) var(--ease-standard);
+}
+
+.whatsapp-option:hover {
+  transform: translateX(4px);
+}
+
+/* Modal */
+.modal {
+  animation: modal-fade-in 0.3s ease-out;
+}
+
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(8px);
+  }
+}
+
+.modal-content {
+  animation: modal-slide-up 0.3s ease-out;
+  max-height: 90vh;
+}
+
+@keyframes modal-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hindi-quote p {
+    font-size: 1.25rem;
+  }
+  
+  .hero-ctas {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .blob-1, .blob-2, .blob-3 {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .service-card {
+    margin-bottom: 1rem;
+  }
+  
+  .process-arrow {
+    display: none;
+  }
+  
+  .testimonial-card {
+    margin-bottom: 1rem;
+  }
+  
+  .logo-container {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .floating-blob,
+  .bounce-animation,
+  .pulse-animation {
+    animation: none;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .gradient-text {
+    -webkit-text-fill-color: var(--color-text);
+    background: none;
+  }
+  
+  .service-shine {
+    display: none;
+  }
+}
+
+/* Focus indicators for keyboard navigation */
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible,
+.theme-btn:focus-visible {
+  outline: 2px solid var(--theme-primary);
+  outline-offset: 2px;
+}
+
+/* Loading states */
+.loading {
+  position: relative;
+  pointer-events: none;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid transparent;
+  border-top: 2px solid var(--theme-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Success states */
+.success {
+  border-color: var(--color-success) !important;
+  background-color: rgba(var(--color-success-rgb), 0.1);
+}
+
+/* Error states */
+.error {
+  border-color: var(--color-error) !important;
+  background-color: rgba(var(--color-error-rgb), 0.1);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection colors */
+::selection {
+  background-color: var(--theme-primary);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: var(--theme-primary);
+  color: white;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-primary);
+}
+
+/* Store tour navigation */
+.store-tour-container {
+  position: relative;
+}
+
+.store-tour-container button {
+  backdrop-filter: blur(8px);
+  transition: all var(--duration-fast) var(--ease-standard);
+}
+
+.store-tour-container button:hover {
+  background: rgba(255, 255, 255, 0.4) !important;
+  transform: scale(1.1);
+}
+
+/* Theme transition */
+* {
+  transition-property: background-color, border-color, color, box-shadow;
+  transition-duration: var(--duration-normal);
+  transition-timing-function: var(--ease-standard);
+}
+
+/* Print styles */
+@media print {
+  .fixed,
+  .modal,
+  #whatsappButton,
+  .sticky-cta,
+  .voice-btn {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .hero-section {
+    background: white !important;
+  }
+  
+  .floating-blob {
+    display: none;
+  }
+}
+
+/* Custom utility classes */
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.backdrop-blur-xl {
+  backdrop-filter: blur(24px);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Intersection Observer animation classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Grid improvements for better responsive behavior */
+@media (min-width: 1024px) {
+  .lg\:grid-cols-4 > * {
+    min-height: 280px;
+  }
+}
+
+/* Enhanced focus management */
+.focus-trap {
+  position: relative;
+}
+
+.focus-trap:focus-within {
+  z-index: 1000;
+}
+
+/* Improved button states */
+.btn-primary:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.btn-secondary:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Enhanced card hover effects */
+.card-hover-effect {
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(var(--theme-primary), 0.15);
+}
+
+/* Improved text animations */
+.text-animate {
+  overflow: hidden;
+  position: relative;
+}
+
+.text-animate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  animation: text-shine 2s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+@keyframes text-shine {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+    </style>
+
+    <!-- Preloader Styles -->
+    <style>
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-cream-50);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        
+        html[data-color-scheme="dark"] #preloader {
+            background-color: var(--color-charcoal-800);
+        }
+        
+        .loader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .loader-dots {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        
+        .loader-dot {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--theme-primary), var(--theme-accent));
+            opacity: 0;
+            animation: dotPulse 1.5s infinite ease-in-out;
+        }
+        
+        .loader-dot:nth-child(1) {
+            animation-delay: 0s;
+        }
+        
+        .loader-dot:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+        
+        .loader-dot:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+        
+        @keyframes dotPulse {
+            0%, 100% { transform: scale(0.5); opacity: 0.3; }
+            50% { transform: scale(1); opacity: 1; }
+        }
+        
+        .loader-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--color-text);
+            opacity: 0.8;
+            letter-spacing: 0.5px;
+        }
+    </style>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Gridlabs Studio",
+        "description": "Premium web design and digital marketing agency serving small and medium businesses across India",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "MG Road",
+            "addressLocality": "Bangalore",
+            "addressRegion": "Karnataka",
+            "postalCode": "560001",
+            "addressCountry": "IN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-98765-43210",
+            "contactType": "customer service"
+        },
+        "url": "https://gridlabsstudio.com",
+        "email": "hello@gridlabsstudio.com"
+    }
+    </script>
+</head>
+<body class="font-inter bg-background text-text overflow-x-hidden">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-dots">
+                <div class="loader-dot"></div>
+                <div class="loader-dot"></div>
+                <div class="loader-dot"></div>
+            </div>
+            <div class="loader-text">Crafting your digital experience...</div>
+        </div>
+    </div>
+    <!-- Sticky Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold font-poppins text-primary">
+                <span class="text-3xl">🚀</span> Gridlabs Studio
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <!-- Theme Switcher & Dark Mode Toggle -->
+            <div class="flex items-center space-x-4">
+                <div class="theme-switcher hidden md:flex space-x-2">
+                    <button class="theme-btn active" data-theme="paintBlue" title="Paint Blue">🎨</button>
+                    <button class="theme-btn" data-theme="woodBrown" title="Wood Brown">🪵</button>
+                    <button class="theme-btn" data-theme="cementGrey" title="Cement Grey">🏗️</button>
+                </div>
+                <button id="darkModeToggle" class="p-2 rounded-full bg-secondary hover:bg-secondary-hover transition-colors">
+                    <span class="dark-icon hidden">🌙</span>
+                    <span class="light-icon">☀️</span>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="md:hidden p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-surface/95 backdrop-blur-lg border-t border-card-border">
+            <div class="container mx-auto px-6 py-4 space-y-4">
+                <a href="#home" class="block nav-link">Home</a>
+                <a href="#about" class="block nav-link">About</a>
+                <a href="#services" class="block nav-link">Services</a>
+                <a href="#portfolio" class="block nav-link">Portfolio</a>
+                <a href="#contact" class="block nav-link">Contact</a>
+                <div class="theme-switcher flex space-x-2 pt-4 border-t border-card-border">
+                    <button class="theme-btn active" data-theme="paintBlue" title="Paint Blue">🎨</button>
+                    <button class="theme-btn" data-theme="woodBrown" title="Wood Brown">🪵</button>
+                    <button class="theme-btn" data-theme="cementGrey" title="Cement Grey">🏗️</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+<section id="home" class="hero-section relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-32 pb-24 sm:pt-40 sm:pb-32">
+
+    <!-- Animated Background -->
+    <div class="hero-bg absolute inset-0">
+        <div class="floating-blob blob-1"></div>
+        <div class="floating-blob blob-2"></div>
+        <div class="floating-blob blob-3"></div>
+    </div>
+    
+    <!-- Hero Content -->
+    <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
+
+        <!-- Hindi Quote -->
+        <div class="hindi-quote mb-8 opacity-0 animate-fade-in-up" style="animation-delay: 0.2s;">
+            <p class="text-xl md:text-2xl font-light italic text-text-secondary">"Aapka sapna — hamara rang."</p>
+        </div>
+        
+        <!-- Main Heading -->
+        <h1 class="hero-title font-poppins font-bold text-5xl md:text-7xl lg:text-8xl mb-6 opacity-0 animate-fade-in-up" style="animation-delay: 0.4s;">
+            We Build <span class="gradient-text">Digital Empires</span>
+        </h1>
+        
+        <!-- Subheading -->
+        <p class="hero-subtitle text-lg md:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto opacity-0 animate-fade-in-up text-text-secondary" style="animation-delay: 0.6s;">
+            Premium web design and digital marketing agency serving small and medium businesses across India
+        </p>
+        
+        <!-- CTA Buttons -->
+        <div class="hero-ctas flex flex-col sm:flex-row gap-6 justify-center opacity-0 animate-fade-in-up" style="animation-delay: 0.8s;">
+            <button class="btn-primary glow-effect px-8 py-4 text-lg font-semibold rounded-full">
+                Start Your Journey 🚀
+            </button>
+            <button class="btn-secondary px-8 py-4 text-lg font-semibold rounded-full">
+                View Our Work ✨
+            </button>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator flex justify-center mt-12 opacity-0 animate-fade-in" style="animation-delay: 1.2s;">
+            <div class="bounce-animation">
+                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+        <!-- Live Color Customizer Banner (Compact) -->
+<section class="color-customizer-banner py-6 bg-surface border-b border-card-border">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-2">
+            <div class="mb-3 md:mb-0">
+                <h3 class="text-base sm:text-lg font-semibold mb-1">🎨 See Your Brand in Action</h3>
+                <p class="text-sm text-text-secondary">Try different color themes to visualize your business branding</p>
+            </div>
+            <div class="flex flex-wrap justify-center md:justify-start gap-2">
+                <button class="theme-preview-btn active" data-theme="paintBlue">
+                    <span class="w-3.5 h-3.5 rounded-full bg-blue-600 inline-block mr-2"></span>
+                    Paint Blue
+                </button>
+                <button class="theme-preview-btn" data-theme="woodBrown">
+                    <span class="w-3.5 h-3.5 rounded-full bg-yellow-800 inline-block mr-2"></span>
+                    Wood Brown
+                </button>
+                <button class="theme-preview-btn" data-theme="cementGrey">
+                    <span class="w-3.5 h-3.5 rounded-full bg-gray-600 inline-block mr-2"></span>
+                    Cement Grey
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-gray-50 dark:bg-gray-800">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col md:flex-row items-center">
+      
+      <!-- Left Column - Image -->
+      <div class="md:w-2/5 mb-10 md:mb-0 md:pr-10 relative">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+               alt="Gridlabs workspace" 
+               class="rounded-lg shadow-xl w-full h-auto max-w-lg z-10 relative">
+          <div class="absolute -bottom-4 -right-4 w-full h-full border-4 rounded-lg z-0 theme-border border-blue-600"></div>
+        </div>
+      </div>
+
+      <!-- Right Column - Content -->
+      <div class="md:w-3/5">
+        <h2 class="text-3xl font-bold mb-6 text-primary theme-text">About Gridlabs</h2>
+        <p class="text-lg mb-6 text-text-secondary dark:text-text-secondary">
+          At Gridlabs, we blend technology and creativity to deliver unmatched digital experiences. 
+          From local shops to modern startups, our solutions are designed to transform every brand's journey — with style and purpose.
+        </p>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 gap-6 mb-8">
+          <div class="p-6 rounded-2xl shadow-md text-center border border-card-border bg-surface dark:bg-dark-surface text-text-secondary dark:text-text-secondary">
+            <div class="text-4xl font-bold text-primary mb-2 counter theme-text" data-target="250">0</div>
+            <div>Clients Served</div>
+          </div>
+          <div class="p-6 rounded-2xl shadow-md text-center border border-card-border bg-surface dark:bg-dark-surface text-text-secondary dark:text-text-secondary">
+            <div class="text-4xl font-bold text-primary mb-2 counter theme-text" data-target="1200">0</div>
+            <div>Projects Completed</div>
+          </div>
+        </div>
+
+        <!-- Highlights -->
+        <div class="flex flex-wrap gap-3">
+          <div class="px-4 py-2 rounded-full flex items-center bg-primary/10 theme-badge text-primary">
+            <svg class="w-5 h-5 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4" />
+            </svg>
+            Top-notch Craftsmanship
+          </div>
+          <div class="px-4 py-2 rounded-full flex items-center bg-primary/10 theme-badge text-primary">
+            <svg class="w-5 h-5 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            Trusted Technology Stack
+          </div>
+          <div class="px-4 py-2 rounded-full flex items-center bg-primary/10 theme-badge text-primary">
+            <svg class="w-5 h-5 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18" />
+            </svg>
+            Fastest Delivery Systems
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+        <!-- Services Grid Section -->
+        <section id="services" class="py-20 bg-surface">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold font-poppins mb-6 gradient-text">
+                        Our Premium Services
+                    </h2>
+                    <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                        Comprehensive digital solutions designed specifically for Indian small and medium businesses
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="service-card group bg-background rounded-2xl p-8 border border-card-border hover:border-primary/50 transition-all duration-300 hover:-translate-y-2">
+                        <div class="service-icon mb-6 text-5xl transition-transform duration-300 group-hover:scale-110 group-hover:bounce">
+                            💻
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Website Design</h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            Modern, responsive websites that convert visitors into customers
+                        </p>
+                        <div class="service-shine absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    <!-- Service Card 2 -->
+                    <div class="service-card group bg-background rounded-2xl p-8 border border-card-border hover:border-primary/50 transition-all duration-300 hover:-translate-y-2">
+                        <div class="service-icon mb-6 text-5xl transition-transform duration-300 group-hover:scale-110 group-hover:bounce">
+                            📈
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Digital Marketing</h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            SEO, social media, and online advertising to grow your business
+                        </p>
+                        <div class="service-shine absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    <!-- Service Card 3 -->
+                    <div class="service-card group bg-background rounded-2xl p-8 border border-card-border hover:border-primary/50 transition-all duration-300 hover:-translate-y-2">
+                        <div class="service-icon mb-6 text-5xl transition-transform duration-300 group-hover:scale-110 group-hover:bounce">
+                            🛒
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">E-commerce Solutions</h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            Online stores that increase sales and customer satisfaction
+                        </p>
+                        <div class="service-shine absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    <!-- Service Card 4 -->
+                    <div class="service-card group bg-background rounded-2xl p-8 border border-card-border hover:border-primary/50 transition-all duration-300 hover:-translate-y-2">
+                        <div class="service-icon mb-6 text-5xl transition-transform duration-300 group-hover:scale-110 group-hover:bounce">
+                            ⭐
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Brand Identity</h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            Logo design and brand guidelines that make you stand out
+                        </p>
+                        <div class="service-shine absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Before/After Slider Section -->
+        <section class="py-20 bg-background">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold font-poppins mb-6 gradient-text">
+                        Transformation Stories
+                    </h2>
+                    <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                        See how we transform ordinary businesses into extraordinary digital experiences
+                    </p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="before-after-slider relative bg-surface rounded-2xl overflow-hidden border border-card-border">
+                        <div class="before-after-container relative h-96">
+                            <!-- Before Image -->
+                            <div class="before-image absolute inset-0 bg-gray-300 flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="text-6xl mb-4">🏪</div>
+                                    <h3 class="text-2xl font-bold text-gray-600 mb-2">BEFORE</h3>
+                                    <p class="text-gray-500">Plain Local Store</p>
+                                </div>
+                            </div>
+                            
+                            <!-- After Image -->
+                            <div class="after-image absolute inset-0 bg-gradient-to-br from-primary to-primary-hover flex items-center justify-center clip-path-right">
+                                <div class="text-center text-white">
+                                    <div class="text-6xl mb-4">🚀</div>
+                                    <h3 class="text-2xl font-bold mb-2">AFTER</h3>
+                                    <p class="opacity-90">Digital Empire</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Slider Handle -->
+                            <div class="slider-handle absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center cursor-grab active:cursor-grabbing z-10">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6 text-center">
+                            <p class="text-text-secondary">Drag the slider to see the transformation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Timeline Section -->
+        <section class="py-20 bg-surface">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold font-poppins mb-6 gradient-text">
+                        Our Process
+                    </h2>
+                    <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                        A proven 4-step process that transforms your business idea into a digital reality
+                    </p>
+                </div>
+                
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid md:grid-cols-4 gap-8">
+                        <!-- Step 1 -->
+                        <div class="process-step text-center group">
+                            <div class="process-icon mb-6 mx-auto w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold transition-transform duration-300 group-hover:scale-110">
+                                1
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Consultation</h3>
+                            <p class="text-text-secondary">We understand your business goals and requirements</p>
+                            <div class="process-arrow hidden md:block absolute top-10 -right-4 text-primary text-2xl">→</div>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="process-step text-center group">
+                            <div class="process-icon mb-6 mx-auto w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold transition-transform duration-300 group-hover:scale-110">
+                                2
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Design</h3>
+                            <p class="text-text-secondary">Create stunning designs that reflect your brand</p>
+                            <div class="process-arrow hidden md:block absolute top-10 -right-4 text-primary text-2xl">→</div>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div class="process-step text-center group">
+                            <div class="process-icon mb-6 mx-auto w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold transition-transform duration-300 group-hover:scale-110">
+                                3
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Development</h3>
+                            <p class="text-text-secondary">Build your website with latest technologies</p>
+                            <div class="process-arrow hidden md:block absolute top-10 -right-4 text-primary text-2xl">→</div>
+                        </div>
+                        
+                        <!-- Step 4 -->
+                        <div class="process-step text-center group">
+                            <div class="process-icon mb-6 mx-auto w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold transition-transform duration-300 group-hover:scale-110">
+                                4
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Launch</h3>
+                            <p class="text-text-secondary">Go live and start growing your business online</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Gallery Section -->
+        <section id="portfolio" class="py-20 bg-background">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold font-poppins mb-6 gradient-text">
+                        Our Portfolio
+                    </h2>
+                    <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                        Success stories from businesses across India who trusted us with their digital transformation
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio-item group bg-surface rounded-2xl overflow-hidden border border-card-border hover:border-primary/50 transition-all duration-300 cursor-pointer">
+                        <div class="portfolio-image h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center relative overflow-hidden">
+                            <div class="text-center text-white">
+                                <div class="text-4xl mb-2">🎨</div>
+                                <h3 class="text-lg font-bold">Paint Store</h3>
+                            </div>
+                            <div class="portfolio-overlay absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-white font-semibold">View Details</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Sharma Paint House</h3>
+                            <p class="text-text-secondary mb-4">Complete digital transformation for a local paint retail business</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-primary font-medium">Paint Retail Store</span>
+                                <span class="text-sm text-text-secondary">View Project →</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 2 -->
+                    <div class="portfolio-item group bg-surface rounded-2xl overflow-hidden border border-card-border hover:border-primary/50 transition-all duration-300 cursor-pointer">
+                        <div class="portfolio-image h-48 bg-gradient-to-br from-yellow-600 to-yellow-800 flex items-center justify-center relative overflow-hidden">
+                            <div class="text-center text-white">
+                                <div class="text-4xl mb-2">🔨</div>
+                                <h3 class="text-lg font-bold">Hardware Store</h3>
+                            </div>
+                            <div class="portfolio-overlay absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-white font-semibold">View Details</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Kumar Hardware Store</h3>
+                            <p class="text-text-secondary mb-4">Modern e-commerce solution for hardware and tools business</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-primary font-medium">Hardware Business</span>
+                                <span class="text-sm text-text-secondary">View Project →</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 3 -->
+                    <div class="portfolio-item group bg-surface rounded-2xl overflow-hidden border border-card-border hover:border-primary/50 transition-all duration-300 cursor-pointer">
+                        <div class="portfolio-image h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center relative overflow-hidden">
+                            <div class="text-center text-white">
+                                <div class="text-4xl mb-2">🧵</div>
+                                <h3 class="text-lg font-bold">Textile Store</h3>
+                            </div>
+                            <div class="portfolio-overlay absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-white font-semibold">View Details</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Priya Textiles</h3>
+                            <p class="text-text-secondary mb-4">Brand identity and website for traditional textile business</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-primary font-medium">Textile Business</span>
+                                <span class="text-sm text-text-secondary">View Project →</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 360° Store Tour Section -->
+        <section class="py-20 bg-surface">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold font-poppins mb-6 gradient-text">
+                        360° Virtual Showroom
+                    </h2>
+                    <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                        Take a virtual tour of our modern workspace and see where the magic happens
+                    </p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="store-tour-container bg-background rounded-2xl overflow-hidden border border-card-border">
+                        <div class="h-96 bg-gradient-to-br from-teal-400 to-blue-600 flex items-center justify-center relative">
+                            <div class="text-center text-white">
+                                <div class="text-6xl mb-4">🏢</div>
+                                <h3 class="text-2xl font-bold mb-4">Virtual Office Tour</h3>
+                                <button class="btn-secondary bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-full font-semibold">
+                                    🌐 Start Virtual Tour
+                                </button>
+                            </div>
+                            
+                            <!-- Navigation Controls -->
+                            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4">
+                                <button class="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors">←</button>
+                                <button class="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors">→</button>
+                                <button class="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors">↑</button>
+                                <button class="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors">↓</button>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6 text-center">
+                            <p class="text-text-secondary">Experience our workspace in immersive 360° view</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Carousel Section -->
+        <section class="py-20 bg-background">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold font-poppins mb-6 gradient-text">
+                        What Our Clients Say
+                    </h2>
+                    <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                        Real testimonials from real businesses who've experienced digital transformation
+                    </p>
+                </div>
+                
+                <div class="max-w-6xl mx-auto">
+                    <div id="testimonialCarousel" class="testimonial-carousel relative">
+                        <div class="testimonial-container">
+                            <!-- Testimonial 1 -->
+                            <div class="testimonial-slide active">
+                                <div class="grid md:grid-cols-3 gap-8">
+                                    <div class="testimonial-card bg-surface p-8 rounded-2xl border border-card-border text-center">
+                                        <div class="testimonial-avatar w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                                            R
+                                        </div>
+                                        <div class="testimonial-stars mb-4">
+                                            ⭐⭐⭐⭐⭐
+                                        </div>
+                                        <p class="text-text-secondary mb-4 italic">
+                                            "Gridlabs completely transformed my paint business. Online orders increased by 300% in just 3 months!"
+                                        </p>
+                                        <h4 class="font-bold">Rajesh Sharma</h4>
+                                        <p class="text-sm text-text-secondary">Sharma Paint House</p>
+                                    </div>
+                                    
+                                    <div class="testimonial-card bg-surface p-8 rounded-2xl border border-card-border text-center">
+                                        <div class="testimonial-avatar w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                                            P
+                                        </div>
+                                        <div class="testimonial-stars mb-4">
+                                            ⭐⭐⭐⭐⭐
+                                        </div>
+                                        <p class="text-text-secondary mb-4 italic">
+                                            "The website they built is amazing. My customers can now order online and I save so much time!"
+                                        </p>
+                                        <h4 class="font-bold">Priya Kumari</h4>
+                                        <p class="text-sm text-text-secondary">Kumar Hardware Store</p>
+                                    </div>
+                                    
+                                    <div class="testimonial-card bg-surface p-8 rounded-2xl border border-card-border text-center">
+                                        <div class="testimonial-avatar w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                                            A
+                                        </div>
+                                        <div class="testimonial-stars mb-4">
+                                            ⭐⭐⭐⭐⭐
+                                        </div>
+                                        <p class="text-text-secondary mb-4 italic">
+                                            "Professional team with great results. My store is now the talk of the town thanks to their digital marketing!"
+                                        </p>
+                                        <h4 class="font-bold">Amit Gupta</h4>
+                                        <p class="text-sm text-text-secondary">Modern Electronics</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Navigation -->
+                        <div class="testimonial-nav flex justify-center mt-8 space-x-4">
+                            <button class="testimonial-prev w-12 h-12 bg-surface border border-card-border rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                                ←
+                            </button>
+                            <button class="testimonial-next w-12 h-12 bg-surface border border-card-border rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                                →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Logo Strip Section -->
+        <section class="py-16 bg-surface border-t border-card-border">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl font-bold mb-4">Trusted by Leading Brands</h3>
+                    <p class="text-text-secondary">We work with authorized dealers and distributors</p>
+                </div>
+                
+                <div class="logo-strip overflow-hidden">
+                    <div class="logo-container flex space-x-12 animate-scroll">
+                        <div class="logo-item">
+                            <div class="w-24 h-16 bg-gray-200 rounded-lg flex items-center justify-center text-gray-600 font-bold hover:bg-primary hover:text-white transition-colors">
+                                Asian Paints
+                            </div>
+                        </div>
+                        <div class="logo-item">
+                            <div class="w-24 h-16 bg-gray-200 rounded-lg flex items-center justify-center text-gray-600 font-bold hover:bg-primary hover:text-white transition-colors">
+                                Fevicol
+                            </div>
+                        </div>
+                        <div class="logo-item">
+                            <div class="w-24 h-16 bg-gray-200 rounded-lg flex items-center justify-center text-gray-600 font-bold hover:bg-primary hover:text-white transition-colors">
+                                Havells
+                            </div>
+                        </div>
+                        <div class="logo-item">
+                            <div class="w-24 h-16 bg-gray-200 rounded-lg flex items-center justify-center text-gray-600 font-bold hover:bg-primary hover:text-white transition-colors">
+                                Pidilite
+                            </div>
+                        </div>
+                        <div class="logo-item">
+                            <div class="w-24 h-16 bg-gray-200 rounded-lg flex items-center justify-center text-gray-600 font-bold hover:bg-primary hover:text-white transition-colors">
+                                Berger
+                            </div>
+                        </div>
+                        <div class="logo-item">
+                            <div class="w-24 h-16 bg-gray-200 rounded-lg flex items-center justify-center text-gray-600 font-bold hover:bg-primary hover:text-white transition-colors">
+                                Dulux
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Real-Time Clock Status -->
+        <section class="py-8 bg-background border-t border-card-border">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <div id="businessStatus" class="inline-flex items-center space-x-3 bg-surface px-6 py-3 rounded-full border border-card-border">
+                        <div id="statusIndicator" class="w-3 h-3 rounded-full bg-green-500"></div>
+                        <span id="statusText" class="font-medium">Open - Delivering until 6PM</span>
+                        <div id="currentTime" class="text-text-secondary text-sm"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form & Map Section -->
+        <section id="contact" class="py-20 bg-surface">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold font-poppins mb-6 gradient-text">
+                        Get In Touch
+                    </h2>
+                    <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                        Ready to transform your business? Let's discuss your project and create something amazing together
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    <!-- Contact Form -->
+                    <div class="contact-form bg-background p-8 rounded-2xl border border-card-border">
+                        <h3 class="text-2xl font-bold mb-6">Send us a message</h3>
+                        <form id="contactForm" class="space-y-6">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary w-full py-3 font-semibold rounded-full">
+                                Send Message 📧
+                            </button>
+                        </form>
+                        
+                        <!-- Success Message -->
+                        <div id="successMessage" class="hidden mt-6 p-4 bg-green-100 border border-green-300 text-green-700 rounded-lg">
+                            ✅ Thank you! Your message has been sent successfully. We'll get back to you soon.
+                        </div>
+                    </div>
+                    
+                    <!-- Map & Contact Info -->
+                    <div class="contact-info">
+                        <!-- Map Simulation -->
+                        <div class="map-container mb-8 h-64 bg-gray-200 rounded-2xl border border-card-border flex items-center justify-center">
+                            <div class="text-center text-gray-600">
+                                <div class="text-4xl mb-2">📍</div>
+                                <h4 class="text-lg font-bold mb-2">Our Location</h4>
+                                <p>MG Road, Bangalore, Karnataka 560001</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Contact Details -->
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center">
+                                    📞
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Phone</h4>
+                                    <p class="text-text-secondary">+91 98765 43210</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center">
+                                    📧
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Email</h4>
+                                    <p class="text-text-secondary">hello@gridlabsstudio.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center">
+                                    📍
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Address</h4>
+                                    <p class="text-text-secondary">MG Road, Bangalore, Karnataka 560001</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Business Card Download -->
+                        <div class="mt-8 p-6 bg-background rounded-2xl border border-card-border">
+                            <h4 class="font-bold mb-4">Save Our Contact</h4>
+                            <p class="text-text-secondary mb-4">Add our business details to your phone contacts</p>
+                            <button id="downloadVCard" class="btn-secondary px-6 py-3 rounded-full">
+                                📱 Save Contact
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-glassmorphism bg-surface/80 backdrop-blur-lg border-t border-card-border py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- About Column -->
+                <div>
+                    <div class="text-2xl font-bold font-poppins text-primary mb-4">
+                        <span class="text-3xl">🚀</span> Gridlabs Studio
+                    </div>
+                    <p class="text-text-secondary mb-6 leading-relaxed">
+                        We build digital empires for small and medium businesses across India. Transform your business with our premium web solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📸</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links Column -->
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <div class="space-y-3">
+                        <a href="#home" class="footer-link block">Home</a>
+                        <a href="#about" class="footer-link block">About Us</a>
+                        <a href="#services" class="footer-link block">Services</a>
+                        <a href="#portfolio" class="footer-link block">Portfolio</a>
+                        <a href="#contact" class="footer-link block">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Services Column -->
+                <div>
+                    <h4 class="font-bold mb-4">Our Services</h4>
+                    <div class="space-y-3">
+                        <a href="#" class="footer-link block">Website Design</a>
+                        <a href="#" class="footer-link block">Digital Marketing</a>
+                        <a href="#" class="footer-link block">E-commerce Solutions</a>
+                        <a href="#" class="footer-link block">Brand Identity</a>
+                    </div>
+                </div>
+                
+                <!-- Newsletter Column -->
+                <div>
+                    <h4 class="font-bold mb-4">Stay Updated</h4>
+                    <p class="text-text-secondary mb-4">Get latest updates about digital trends and our services</p>
+                    <form class="space-y-4">
+                        <input type="email" placeholder="Your email address" class="form-control">
+                        <button type="submit" class="btn-primary w-full py-2 rounded-full">
+                            Subscribe 📧
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="border-t border-card-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-text-secondary text-sm">
+                    © 2025 Gridlabs Studio. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="footer-link text-sm">Privacy Policy</a>
+                    <a href="#" class="footer-link text-sm">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <!-- WhatsApp Chat Button -->
+    <div id="whatsappButton" class="fixed bottom-6 right-6 z-50">
+        <button class="whatsapp-btn w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition-colors pulse-animation">
+            💬
+        </button>
+        
+        <!-- WhatsApp Options Dropdown -->
+        <div id="whatsappOptions" class="hidden absolute bottom-16 right-0 bg-surface border border-card-border rounded-2xl p-4 w-64 shadow-xl">
+            <h4 class="font-bold mb-4">How can we help you?</h4>
+            <div class="space-y-3">
+                <a href="#" class="whatsapp-option flex items-center space-x-3 p-3 rounded-lg hover:bg-background transition-colors">
+                    <span class="text-xl">📍</span>
+                    <span>Send me store location</span>
+                </a>
+                <a href="#" class="whatsapp-option flex items-center space-x-3 p-3 rounded-lg hover:bg-background transition-colors">
+                    <span class="text-xl">💬</span>
+                    <span>Show me paint shades</span>
+                </a>
+                <a href="#" class="whatsapp-option flex items-center space-x-3 p-3 rounded-lg hover:bg-background transition-colors">
+                    <span class="text-xl">🛒</span>
+                    <span>I want to place an order</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky CTA Pill -->
+    <div class="fixed bottom-6 left-6 z-50">
+        <button class="sticky-cta bg-primary text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-primary-hover transition-colors pulse-animation">
+            📞 Call Now
+        </button>
+    </div>
+
+    <!-- Voice Button -->
+    <div class="fixed bottom-24 right-6 z-50">
+        <button id="voiceButton" class="voice-btn w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-purple-600 transition-colors">
+            🎧
+        </button>
+    </div>
+
+    <!-- Portfolio Lightbox Modal -->
+    <div id="portfolioModal" class="modal fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-6">
+        <div class="modal-content bg-surface rounded-2xl max-w-4xl w-full max-h-full overflow-auto">
+            <div class="modal-header p-6 border-b border-card-border flex justify-between items-center">
+                <h3 id="modalTitle" class="text-2xl font-bold"></h3>
+                <button id="closeModal" class="text-text-secondary hover:text-text text-2xl">×</button>
+            </div>
+            <div class="modal-body p-6">
+                <div id="modalContent" class="space-y-6"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+
+
+
+// Theme color change logic
+const themeColors = {
+  paintBlue: 'blue-600',
+  woodBrown: 'yellow-800',
+  cementGrey: 'gray-600'
+};
+
+document.querySelectorAll('.theme-preview-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const selectedTheme = btn.getAttribute('data-theme');
+    const color = themeColors[selectedTheme];
+
+    // Update border color
+    document.querySelectorAll('.theme-border').forEach(el => {
+      el.classList.remove('border-blue-600', 'border-yellow-800', 'border-gray-600');
+      el.classList.add(`border-${color}`);
+    });
+
+    // Update text color
+    document.querySelectorAll('.theme-text').forEach(el => {
+      el.classList.remove('text-blue-600', 'text-yellow-800', 'text-gray-600');
+      el.classList.add(`text-${color}`);
+    });
+
+    // Update badge bg
+    document.querySelectorAll('.theme-badge').forEach(el => {
+      el.classList.remove('bg-blue-600/10', 'bg-yellow-800/10', 'bg-gray-600/10');
+      el.classList.add(`bg-${color}/10`);
+    });
+  });
+});
+
+// Counter animation (for Clients + Projects)
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const current = +counter.innerText;
+      const increment = Math.ceil(target / 100);
+
+      if (current < target) {
+        counter.innerText = Math.min(current + increment, target);
+        setTimeout(updateCount, 30);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+  });
+});
+
+
+
+
+        // Gridlabs Studio - Interactive JavaScript (FINAL FIXED VERSION)
+// Premium Business Portfolio Website
+
+// ===========================================
+// INITIALIZATION & GLOBAL VARIABLES
+// ===========================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('🚀 Initializing Gridlabs Studio website...');
+    
+    // Handle preloader
+    const preloader = document.getElementById('preloader');
+    
+    // Check if preloader has been shown in this session
+    if (!sessionStorage.getItem('preloaderShown')) {
+        // Show preloader for 3 seconds
+        setTimeout(() => {
+            preloader.style.opacity = '0';
+            preloader.style.transform = 'translateY(-20px)';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+            
+            // Set session storage to skip preloader on refresh
+            sessionStorage.setItem('preloaderShown', 'true');
+        }, 3000);
+    } else {
+        // Skip preloader if already shown in this session
+        preloader.style.display = 'none';
+    }
+    
+    // Initialize all components with error handling
+    try {
+        initializeThemeSystem();
+        console.log('✅ Theme system initialized');
+        
+        initializeNavigation();
+        console.log('✅ Navigation initialized');
+        
+        initializeCTAButtons();
+        console.log('✅ CTA buttons initialized');
+        
+        initializeAnimations();
+        console.log('✅ Animations initialized');
+        
+        initializeCounters();
+        console.log('✅ Counters initialized');
+        
+        initializeSliders();
+        console.log('✅ Sliders initialized');
+        
+        initializeCarousels();
+        console.log('✅ Carousels initialized');
+        
+        initializeModals();
+        console.log('✅ Modals initialized');
+        
+        initializeForms();
+        console.log('✅ Forms initialized');
+        
+        initializeFloatingActions();
+        console.log('✅ Floating actions initialized');
+        
+        initializeBusinessStatus();
+        console.log('✅ Business status initialized');
+        
+        initializeMiscFeatures();
+        console.log('✅ Misc features initialized');
+        
+        console.log('🎉 Gridlabs Studio website fully initialized!');
+    } catch (error) {
+        console.error('❌ Initialization error:', error);
+    }
+});
+
+// Global variables
+let currentTheme = 'paintBlue';
+let isScrolling = false;
+let animationObserver = null;
+let businessHours = {
+    open: 9,  // 9 AM
+    close: 18 // 6 PM
+};
+
+// ===========================================
+// THEME SYSTEM
+// ===========================================
+
+function initializeThemeSystem() {
+    const themeButtons = document.querySelectorAll('.theme-btn, .theme-preview-btn');
+    const savedTheme = localStorage.getItem('gridlabs-theme') || 'paintBlue';
+    
+    // Apply saved theme
+    applyTheme(savedTheme);
+    
+    // Theme button event listeners
+    themeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const theme = this.dataset.theme;
+            if (theme) {
+                applyTheme(theme);
+                localStorage.setItem('gridlabs-theme', theme);
+                
+                // Animate theme change
+                document.body.style.transition = 'all 0.5s ease-out';
+                setTimeout(() => {
+                    document.body.style.transition = '';
+                }, 500);
+            }
+        });
+    });
+    
+    // Dark mode toggle
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    
+    if (isDarkMode) {
+        document.documentElement.setAttribute('data-color-scheme', 'dark');
+        updateDarkModeIcon(true);
+    }
+    
+    darkModeToggle?.addEventListener('click', function() {
+        const currentScheme = document.documentElement.getAttribute('data-color-scheme');
+        const newScheme = currentScheme === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-color-scheme', newScheme);
+        localStorage.setItem('darkMode', newScheme === 'dark');
+        updateDarkModeIcon(newScheme === 'dark');
+        
+        // Animate toggle
+        this.style.transform = 'scale(0.9)';
+        setTimeout(() => {
+            this.style.transform = '';
+        }, 150);
+    });
+}
+
+function applyTheme(themeName) {
+    const themes = {
+        paintBlue: { primary: '#2563eb', secondary: '#1e40af', accent: '#60a5fa' },
+        woodBrown: { primary: '#92400e', secondary: '#78350f', accent: '#d97706' },
+        cementGrey: { primary: '#6b7280', secondary: '#4b5563', accent: '#9ca3af' }
+    };
+    
+    const theme = themes[themeName];
+    if (!theme) return;
+    
+    // Update CSS custom properties
+    document.documentElement.style.setProperty('--theme-primary', theme.primary);
+    document.documentElement.style.setProperty('--theme-secondary', theme.secondary);
+    document.documentElement.style.setProperty('--theme-accent', theme.accent);
+    document.documentElement.setAttribute('data-theme', themeName);
+    
+    // Update active states
+    document.querySelectorAll('.theme-btn, .theme-preview-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.theme === themeName);
+    });
+    
+    currentTheme = themeName;
+    
+    // Trigger theme change event
+    window.dispatchEvent(new CustomEvent('themeChanged', { detail: { theme: themeName } }));
+}
+
+function updateDarkModeIcon(isDark) {
+    const darkIcon = document.querySelector('.dark-icon');
+    const lightIcon = document.querySelector('.light-icon');
+    
+    if (isDark) {
+        darkIcon?.classList.remove('hidden');
+        lightIcon?.classList.add('hidden');
+    } else {
+        darkIcon?.classList.add('hidden');
+        lightIcon?.classList.remove('hidden');
+    }
+}
+
+// ===========================================
+// CTA BUTTONS INITIALIZATION (FIXED)
+// ===========================================
+
+function initializeCTAButtons() {
+    console.log('🔧 Initializing CTA buttons...');
+    
+    // Wait for DOM to be fully ready
+    setTimeout(() => {
+        const startJourneyBtn = document.querySelector('.hero-ctas .btn-primary');
+        const viewWorkBtn = document.querySelector('.hero-ctas .btn-secondary');
+        
+        console.log('Start Journey Button:', startJourneyBtn);
+        console.log('View Work Button:', viewWorkBtn);
+        
+        // Start Your Journey button - scroll to contact form
+        if (startJourneyBtn) {
+            startJourneyBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('🎯 Start Journey clicked - scrolling to contact');
+                
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                    const headerHeight = document.getElementById('header')?.offsetHeight || 80;
+                    const targetPosition = contactSection.offsetTop - headerHeight - 20;
+                    smoothScrollTo(targetPosition, 800);
+                } else {
+                    console.error('❌ Contact section not found');
+                }
+            });
+            console.log('✅ Start Journey button event attached');
+        } else {
+            console.error('❌ Start Journey button not found');
+        }
+        
+        // View Our Work button - scroll to portfolio
+        if (viewWorkBtn) {
+            viewWorkBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('🎯 View Work clicked - scrolling to portfolio');
+                
+                const portfolioSection = document.getElementById('portfolio');
+                if (portfolioSection) {
+                    const headerHeight = document.getElementById('header')?.offsetHeight || 80;
+                    const targetPosition = portfolioSection.offsetTop - headerHeight - 20;
+                    smoothScrollTo(targetPosition, 800);
+                } else {
+                    console.error('❌ Portfolio section not found');
+                }
+            });
+            console.log('✅ View Work button event attached');
+        } else {
+            console.error('❌ View Work button not found');
+        }
+    }, 100);
+}
+
+// ===========================================
+// NAVIGATION & HEADER
+// ===========================================
+
+function initializeNavigation() {
+    const header = document.getElementById('header');
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    // Scroll-triggered header effects
+    let lastScrollY = window.scrollY;
+    
+    window.addEventListener('scroll', throttle(() => {
+        const currentScrollY = window.scrollY;
+        
+        // Add/remove scrolled class
+        header?.classList.toggle('scrolled', currentScrollY > 50);
+        
+        // Hide/show header on scroll
+        if (header && currentScrollY > lastScrollY && currentScrollY > 200) {
+            header.style.transform = 'translateY(-100%)';
+        } else if (header) {
+            header.style.transform = 'translateY(0)';
+        }
+        
+        lastScrollY = currentScrollY;
+    }, 100));
+    
+    // Mobile menu toggle
+    mobileMenuBtn?.addEventListener('click', function() {
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        
+        if (isOpen) {
+            mobileMenu.classList.add('hidden');
+            this.innerHTML = '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>';
+        } else {
+            mobileMenu.classList.remove('hidden');
+            this.innerHTML = '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>';
+        }
+        
+        // Animate menu
+        if (!isOpen) {
+            mobileMenu.style.opacity = '0';
+            mobileMenu.style.transform = 'translateY(-10px)';
+            requestAnimationFrame(() => {
+                mobileMenu.style.transition = 'all 0.3s ease-out';
+                mobileMenu.style.opacity = '1';
+                mobileMenu.style.transform = 'translateY(0)';
+            });
+        }
+    });
+    
+    // Smooth scrolling for navigation links
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                const headerHeight = header?.offsetHeight || 80;
+                const targetPosition = targetSection.offsetTop - headerHeight - 20;
+                
+                smoothScrollTo(targetPosition, 800);
+                
+                // Close mobile menu if open
+                mobileMenu?.classList.add('hidden');
+                if (mobileMenuBtn) {
+                    mobileMenuBtn.innerHTML = '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>';
+                }
+            }
+        });
+    });
+    
+    // Scroll indicator click
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    scrollIndicator?.addEventListener('click', function() {
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            const headerHeight = header?.offsetHeight || 80;
+            const targetPosition = aboutSection.offsetTop - headerHeight - 20;
+            smoothScrollTo(targetPosition, 800);
+        }
+    });
+}
+
+// ===========================================
+// SCROLL ANIMATIONS & INTERSECTION OBSERVER
+// ===========================================
+
+function initializeAnimations() {
+    // Create intersection observer for scroll animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '-50px 0px -50px 0px',
+        threshold: 0.1
+    };
+    
+    animationObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animated');
+                
+                // Special animations for specific elements
+                if (entry.target.classList.contains('counter')) {
+                    animateCounter(entry.target);
+                }
+                
+                if (entry.target.classList.contains('process-step')) {
+                    animateProcessStep(entry.target);
+                }
+            }
+        });
+    }, observerOptions);
+    
+    // Observe elements that should animate on scroll
+    const animateElements = document.querySelectorAll(`
+        .service-card,
+        .portfolio-item,
+        .testimonial-card,
+        .process-step,
+        .about-content,
+        .about-image-container
+    `);
+    
+    animateElements.forEach(el => {
+        el.classList.add('animate-on-scroll');
+        animationObserver.observe(el);
+    });
+    
+    // Hero section animations
+    setTimeout(() => {
+        const heroElements = document.querySelectorAll('.hero-title, .hero-subtitle, .hero-ctas, .hindi-quote');
+        heroElements.forEach((el, index) => {
+            setTimeout(() => {
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+            }, index * 200);
+        });
+    }, 300);
+}
+
+function animateProcessStep(element) {
+    const icon = element.querySelector('.process-icon');
+    const arrow = element.querySelector('.process-arrow');
+    
+    if (icon) {
+        icon.style.animation = 'bounce 0.6s ease-out';
+        setTimeout(() => {
+            icon.style.animation = '';
+        }, 600);
+    }
+    
+    if (arrow) {
+        setTimeout(() => {
+            arrow.style.opacity = '1';
+            arrow.style.transform = 'translateX(0)';
+        }, 300);
+    }
+}
+
+// ===========================================
+// COUNTER ANIMATIONS
+// ===========================================
+
+function initializeCounters() {
+    const counters = document.querySelectorAll('.counter');
+    
+    counters.forEach(counter => {
+        counter.style.opacity = '0';
+    });
+}
+
+function animateCounter(counter) {
+    const target = parseInt(counter.dataset.target);
+    const duration = 2000;
+    const start = performance.now();
+    const startValue = 0;
+    
+    function updateCounter(currentTime) {
+        const elapsed = currentTime - start;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        // Easing function (ease-out)
+        const easeOut = 1 - Math.pow(1 - progress, 3);
+        const currentValue = Math.floor(startValue + (target - startValue) * easeOut);
+        
+        counter.textContent = currentValue + (counter.textContent.includes('+') ? '+' : '');
+        
+        if (progress < 1) {
+            requestAnimationFrame(updateCounter);
+        } else {
+            counter.textContent = target + (counter.textContent.includes('+') ? '+' : '');
+        }
+    }
+    
+    counter.style.opacity = '1';
+    requestAnimationFrame(updateCounter);
+}
+
+// ===========================================
+// SLIDERS & INTERACTIVE ELEMENTS (FIXED)
+// ===========================================
+
+function initializeSliders() {
+    console.log('🔧 Initializing sliders...');
+    setTimeout(() => {
+        initializeBeforeAfterSlider();
+    }, 500);
+}
+
+function initializeBeforeAfterSlider() {
+    console.log('🔧 Looking for before/after slider elements...');
+    
+    const sliderContainer = document.querySelector('.before-after-container');
+    const handle = document.querySelector('.slider-handle');
+    const afterImage = document.querySelector('.after-image');
+    
+    console.log('Slider container:', sliderContainer);
+    console.log('Handle:', handle);
+    console.log('After image:', afterImage);
+    
+    if (!sliderContainer || !handle || !afterImage) {
+        console.error('❌ Before/after slider elements not found');
+        return;
+    }
+    
+    let isDragging = false;
+    let currentX = 50; // Start at 50%
+    
+    // Initialize slider position
+    updateSlider(currentX);
+    
+    function startDrag(e) {
+        console.log('🖱️ Start drag');
+        e.preventDefault();
+        isDragging = true;
+        handle.style.cursor = 'grabbing';
+        document.body.style.cursor = 'grabbing';
+        handle.style.transform = 'translate(-50%, -50%) scale(1.1)';
+        
+        // Prevent text selection
+        document.body.style.userSelect = 'none';
+    }
+    
+    function drag(e) {
+        if (!isDragging) return;
+        
+        e.preventDefault();
+        
+        const clientX = e.type === 'mousemove' ? e.clientX : (e.touches && e.touches[0] ? e.touches[0].clientX : 0);
+        const sliderRect = sliderContainer.getBoundingClientRect();
+        const relativeX = clientX - sliderRect.left;
+        const percentage = Math.max(0, Math.min(100, (relativeX / sliderRect.width) * 100));
+        
+        currentX = percentage;
+        updateSlider(percentage);
+        
+        console.log('Dragging to:', percentage + '%');
+    }
+    
+    function stopDrag() {
+        console.log('🖱️ Stop drag');
+        isDragging = false;
+        handle.style.cursor = 'grab';
+        document.body.style.cursor = '';
+        handle.style.transform = 'translate(-50%, -50%) scale(1)';
+        document.body.style.userSelect = '';
+    }
+    
+    function updateSlider(percentage) {
+        afterImage.style.clipPath = `polygon(${percentage}% 0%, 100% 0%, 100% 100%, ${percentage}% 100%)`;
+        handle.style.left = `${percentage}%`;
+    }
+    
+    // Remove any existing event listeners first
+    handle.removeEventListener('mousedown', startDrag);
+    document.removeEventListener('mousemove', drag);
+    document.removeEventListener('mouseup', stopDrag);
+    handle.removeEventListener('touchstart', startDrag);
+    document.removeEventListener('touchmove', drag);
+    document.removeEventListener('touchend', stopDrag);
+    
+    // Add event listeners
+    handle.addEventListener('mousedown', startDrag);
+    document.addEventListener('mousemove', drag);
+    document.addEventListener('mouseup', stopDrag);
+    
+    // Touch events
+    handle.addEventListener('touchstart', startDrag, { passive: false });
+    document.addEventListener('touchmove', drag, { passive: false });
+    document.addEventListener('touchend', stopDrag);
+    
+    console.log('✅ Before/after slider initialized successfully');
+    
+    // Demo animation after delay
+    setTimeout(() => {
+        if (!isDragging) {
+            console.log('🎬 Starting demo animation');
+            let demoStep = 0;
+            const demoInterval = setInterval(() => {
+                if (isDragging) {
+                    clearInterval(demoInterval);
+                    return;
+                }
+                
+                demoStep++;
+                const demoPercentage = 50 + Math.sin(demoStep * 0.2) * 25;
+                updateSlider(demoPercentage);
+                
+                if (demoStep > 30) {
+                    clearInterval(demoInterval);
+                    updateSlider(50); // Return to center
+                }
+            }, 150);
+        }
+    }, 3000);
+}
+
+// ===========================================
+// CAROUSELS
+// ===========================================
+
+function initializeCarousels() {
+    initializeTestimonialCarousel();
+}
+
+function initializeTestimonialCarousel() {
+    const carousel = document.getElementById('testimonialCarousel');
+    const prevBtn = document.querySelector('.testimonial-prev');
+    const nextBtn = document.querySelector('.testimonial-next');
+    
+    if (!carousel) return;
+    
+    let currentSlide = 0;
+    const slides = carousel.querySelectorAll('.testimonial-slide');
+    const totalSlides = slides.length;
+    
+    // Auto-rotation
+    let autoRotateInterval = setInterval(nextSlide, 5000);
+    
+    // Pause on hover
+    carousel.addEventListener('mouseenter', () => {
+        clearInterval(autoRotateInterval);
+    });
+    
+    carousel.addEventListener('mouseleave', () => {
+        autoRotateInterval = setInterval(nextSlide, 5000);
+    });
+    
+    // Navigation buttons
+    prevBtn?.addEventListener('click', prevSlide);
+    nextBtn?.addEventListener('click', nextSlide);
+    
+    function nextSlide() {
+        slides[currentSlide]?.classList.remove('active');
+        currentSlide = (currentSlide + 1) % totalSlides;
+        slides[currentSlide]?.classList.add('active');
+        
+        // Animate button
+        if (nextBtn) {
+            nextBtn.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                nextBtn.style.transform = '';
+            }, 150);
+        }
+    }
+    
+    function prevSlide() {
+        slides[currentSlide]?.classList.remove('active');
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        slides[currentSlide]?.classList.add('active');
+        
+        // Animate button
+        if (prevBtn) {
+            prevBtn.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                prevBtn.style.transform = '';
+            }, 150);
+        }
+    }
+}
+
+// ===========================================
+// MODALS & LIGHTBOXES (FIXED)
+// ===========================================
+
+function initializeModals() {
+    console.log('🔧 Initializing modals...');
+    
+    setTimeout(() => {
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        const modal = document.getElementById('portfolioModal');
+        const closeBtn = document.getElementById('closeModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalContent = document.getElementById('modalContent');
+        
+        console.log('Portfolio items found:', portfolioItems.length);
+        console.log('Modal element:', modal);
+        
+        // Portfolio data
+        const portfolioData = {
+            0: {
+                title: 'Sharma Paint House',
+                category: 'Paint Retail Store',
+                description: 'Complete digital transformation for a local paint retail business including website design, inventory management system, and digital marketing campaign.',
+                features: ['Responsive Website Design', 'Color Picker Tool', 'Online Paint Calculator', 'Customer Gallery', 'WhatsApp Integration'],
+                results: ['300% increase in online orders', '150% growth in customer base', '40% improvement in customer satisfaction'],
+                timeline: '6 weeks',
+                technologies: 'HTML5, CSS3, JavaScript, PHP, MySQL'
+            },
+            1: {
+                title: 'Kumar Hardware Store',
+                category: 'Hardware Business', 
+                description: 'Modern e-commerce solution for hardware and tools business with inventory tracking and customer management.',
+                features: ['E-commerce Platform', 'Inventory Management', 'Customer Portal', 'Mobile App', 'Payment Gateway'],
+                results: ['250% increase in sales', '60% reduction in manual work', '200% growth in repeat customers'],
+                timeline: '8 weeks',
+                technologies: 'React, Node.js, MongoDB, Stripe API'
+            },
+            2: {
+                title: 'Priya Textiles',
+                category: 'Textile Business',
+                description: 'Brand identity and website for traditional textile business with modern digital presence.',
+                features: ['Brand Identity Design', 'Fabric Catalog', 'Custom Order System', 'Virtual Showroom', 'Social Media Integration'],
+                results: ['400% increase in brand visibility', '180% growth in custom orders', '90% customer retention rate'],
+                timeline: '10 weeks',
+                technologies: 'Vue.js, Laravel, PostgreSQL, AWS'
+            }
+        };
+        
+        // Add click handlers to portfolio items
+        portfolioItems.forEach((item, index) => {
+            // Remove existing listeners
+            const newItem = item.cloneNode(true);
+            item.parentNode.replaceChild(newItem, item);
+            
+            newItem.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('🎯 Portfolio item clicked:', index);
+                const data = portfolioData[index];
+                if (data) {
+                    showPortfolioModal(data);
+                } else {
+                    console.error('❌ No data for portfolio item:', index);
+                }
+            });
+            
+            // Make sure it's clickable
+            newItem.style.cursor = 'pointer';
+            console.log('✅ Event attached to portfolio item:', index);
+        });
+        
+        function showPortfolioModal(data) {
+            console.log('📱 Opening modal for:', data.title);
+            
+            if (!modal || !modalTitle || !modalContent) {
+                console.error('❌ Modal elements not found');
+                return;
+            }
+            
+            modalTitle.textContent = data.title;
+            modalContent.innerHTML = `
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="bg-gradient-to-br from-blue-500 to-blue-700 h-64 rounded-lg flex items-center justify-center text-white text-6xl mb-6">
+                            🎨
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">Project Overview</h4>
+                        <p class="text-text-secondary mb-4">${data.description}</p>
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <strong>Timeline:</strong> ${data.timeline}
+                            </div>
+                            <div>
+                                <strong>Category:</strong> ${data.category}
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Key Features</h4>
+                        <ul class="space-y-2 mb-6">
+                            ${data.features.map(feature => `<li class="flex items-center space-x-2"><span class="text-green-500">✓</span><span>${feature}</span></li>`).join('')}
+                        </ul>
+                        <h4 class="text-lg font-bold mb-4">Results Achieved</h4>
+                        <ul class="space-y-2 mb-6">
+                            ${data.results.map(result => `<li class="flex items-center space-x-2"><span class="text-primary">📊</span><span>${result}</span></li>`).join('')}
+                        </ul>
+                        <p class="text-sm text-text-secondary"><strong>Technologies:</strong> ${data.technologies}</p>
+                    </div>
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            
+            // Focus management
+            modal.focus();
+            console.log('✅ Modal opened successfully');
+        }
+        
+        function closeModal() {
+            console.log('❌ Closing modal');
+            if (modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
+        
+        closeBtn?.addEventListener('click', closeModal);
+        modal?.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+        
+        console.log('✅ Portfolio modals initialized successfully');
+    }, 1000);
+}
+
+// ===========================================
+// FORMS & VALIDATION (FIXED)
+// ===========================================
+
+function initializeForms() {
+    console.log('🔧 Initializing forms...');
+    
+    const contactForm = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+    
+    console.log('Contact form:', contactForm);
+    console.log('Success message:', successMessage);
+    
+    contactForm?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        console.log('📝 Form submitted');
+        
+        const formData = new FormData(this);
+        const data = {
+            name: formData.get('name')?.trim() || '',
+            email: formData.get('email')?.trim() || '', 
+            message: formData.get('message')?.trim() || ''
+        };
+        
+        console.log('Form data:', data);
+        
+        // Clear previous errors
+        clearAllFieldErrors();
+        
+        // Validate form
+        if (validateForm(data)) {
+            submitForm(data, this, successMessage);
+        } else {
+            console.log('❌ Form validation failed');
+        }
+    });
+    
+    // Real-time validation
+    const inputs = contactForm?.querySelectorAll('input, textarea');
+    inputs?.forEach(input => {
+        input.addEventListener('blur', function() {
+            validateField(this);
+        });
+        
+        input.addEventListener('input', function() {
+            if (this.classList.contains('error')) {
+                validateField(this);
+            }
+        });
+    });
+    
+    console.log('✅ Forms initialized');
+}
+
+function validateForm(data) {
+    let isValid = true;
+    const form = document.getElementById('contactForm');
+    
+    // Name validation
+    const nameInput = form?.querySelector('[name="name"]');
+    if (!data.name || data.name.length < 2) {
+        showFieldError(nameInput, 'Name must be at least 2 characters long');
+        isValid = false;
+    } else {
+        clearFieldError(nameInput);
+    }
+    
+    // Email validation
+    const emailInput = form?.querySelector('[name="email"]');
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!data.email || !emailPattern.test(data.email)) {
+        showFieldError(emailInput, 'Please enter a valid email address');
+        isValid = false;
+    } else {
+        clearFieldError(emailInput);
+    }
+    
+    // Message validation
+    const messageInput = form?.querySelector('[name="message"]');
+    if (!data.message || data.message.length < 10) {
+        showFieldError(messageInput, 'Message must be at least 10 characters long');
+        isValid = false;
+    } else {
+        clearFieldError(messageInput);
+    }
+    
+    return isValid;
+}
+
+function validateField(field) {
+    const value = field.value.trim();
+    
+    switch (field.name) {
+        case 'name':
+            if (value.length < 2) {
+                showFieldError(field, 'Name must be at least 2 characters long');
+                return false;
+            }
+            break;
+        case 'email':
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(value)) {
+                showFieldError(field, 'Please enter a valid email address');
+                return false;
+            }
+            break;
+        case 'message':
+            if (value.length < 10) {
+                showFieldError(field, 'Message must be at least 10 characters long');
+                return false;
+            }
+            break;
+    }
+    
+    clearFieldError(field);
+    return true;
+}
+
+function showFieldError(field, message) {
+    if (!field) return;
+    
+    field.classList.add('error');
+    
+    // Remove existing error message
+    const existingError = field.parentNode?.querySelector('.error-message');
+    if (existingError) {
+        existingError.remove();
+    }
+    
+    // Add new error message
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'error-message text-red-500 text-sm mt-1';
+    errorDiv.textContent = message;
+    field.parentNode?.appendChild(errorDiv);
+}
+
+function clearFieldError(field) {
+    if (!field) return;
+    
+    field.classList.remove('error');
+    const errorMessage = field.parentNode?.querySelector('.error-message');
+    if (errorMessage) {
+        errorMessage.remove();
+    }
+}
+
+function clearAllFieldErrors() {
+    const form = document.getElementById('contactForm');
+    const errorMessages = form?.querySelectorAll('.error-message');
+    const errorFields = form?.querySelectorAll('.error');
+    
+    errorMessages?.forEach(msg => msg.remove());
+    errorFields?.forEach(field => field.classList.remove('error'));
+}
+
+function submitForm(data, form, successMessage) {
+    console.log('📤 Submitting form...');
+    
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalText = submitButton?.textContent || 'Send Message';
+    
+    if (!submitButton || !successMessage) {
+        console.error('❌ Submit button or success message not found');
+        return;
+    }
+    
+    // Show loading state
+    submitButton.textContent = 'Sending...';
+    submitButton.disabled = true;
+    submitButton.classList.add('loading');
+    
+    // Simulate form submission
+    setTimeout(() => {
+        console.log('✅ Form submission complete');
+        
+        // Show success message
+        successMessage.classList.remove('hidden');
+        successMessage.style.opacity = '0';
+        successMessage.style.transform = 'translateY(10px)';
+        
+        requestAnimationFrame(() => {
+            successMessage.style.transition = 'all 0.3s ease-out';
+            successMessage.style.opacity = '1';
+            successMessage.style.transform = 'translateY(0)';
+        });
+        
+        // Reset form
+        form.reset();
+        clearAllFieldErrors();
+        
+        // Reset button
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+        submitButton.classList.remove('loading');
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+            successMessage.style.opacity = '0';
+            setTimeout(() => {
+                successMessage.classList.add('hidden');
+            }, 300);
+        }, 5000);
+        
+        console.log('Form submitted successfully:', data);
+    }, 2000);
+}
+
+// ===========================================
+// FLOATING ACTION BUTTONS (FIXED)
+// ===========================================
+
+function initializeFloatingActions() {
+    console.log('🔧 Initializing floating actions...');
+    
+    setTimeout(() => {
+        initializeWhatsAppChat();
+        initializeVoiceButton();
+        initializeStickyCall();
+        initializeVCardDownload();
+    }, 500);
+}
+
+function initializeWhatsAppChat() {
+    console.log('💬 Initializing WhatsApp chat...');
+    
+    const whatsappBtn = document.querySelector('.whatsapp-btn');
+    const whatsappOptions = document.getElementById('whatsappOptions');
+    const whatsappLinks = document.querySelectorAll('.whatsapp-option');
+    
+    console.log('WhatsApp button:', whatsappBtn);
+    console.log('WhatsApp options:', whatsappOptions);
+    console.log('WhatsApp links:', whatsappLinks.length);
+    
+    let isOptionsOpen = false;
+    
+    if (!whatsappBtn || !whatsappOptions) {
+        console.error('❌ WhatsApp elements not found');
+        return;
+    }
+    
+    // Remove existing event listeners
+    const newWhatsappBtn = whatsappBtn.cloneNode(true);
+    whatsappBtn.parentNode.replaceChild(newWhatsappBtn, whatsappBtn);
+    
+    newWhatsappBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('💬 WhatsApp button clicked, current state:', isOptionsOpen);
+        
+        isOptionsOpen = !isOptionsOpen;
+        
+        if (isOptionsOpen) {
+            whatsappOptions.classList.remove('hidden');
+            this.style.transform = 'scale(0.9) rotate(15deg)';
+            console.log('✅ WhatsApp options opened');
+            
+            setTimeout(() => {
+                this.style.transform = 'scale(1) rotate(0deg)';
+            }, 150);
+        } else {
+            whatsappOptions.classList.add('hidden');
+            console.log('❌ WhatsApp options closed');
+        }
+    });
+    
+    // Close options when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('#whatsappButton') && isOptionsOpen) {
+            whatsappOptions.classList.add('hidden');
+            isOptionsOpen = false;
+            console.log('❌ WhatsApp options closed (click outside)');
+        }
+    });
+    
+    // WhatsApp option links
+    const whatsappMessages = [
+        'Hi! Please share your store location with me.',
+        'Hello! I\'m interested in seeing available paint color shades.',
+        'Hi! I would like to place an order. Please assist me.'
+    ];
+    
+    // Re-query the links after DOM manipulation
+    setTimeout(() => {
+        const updatedWhatsappLinks = document.querySelectorAll('.whatsapp-option');
+        console.log('Updated WhatsApp links:', updatedWhatsappLinks.length);
+        
+        updatedWhatsappLinks.forEach((link, index) => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('🎯 WhatsApp option clicked:', index);
+                
+                const message = encodeURIComponent(whatsappMessages[index] || 'Hello from Gridlabs Studio!');
+                const whatsappURL = `https://wa.me/919876543210?text=${message}`;
+                window.open(whatsappURL, '_blank');
+                
+                // Close options
+                whatsappOptions.classList.add('hidden');
+                isOptionsOpen = false;
+                
+                // Animate click
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+        });
+    }, 100);
+    
+    console.log('✅ WhatsApp chat initialized');
+}
+
+function initializeVoiceButton() {
+    const voiceBtn = document.getElementById('voiceButton');
+    let isPlaying = false;
+    
+    voiceBtn?.addEventListener('click', function() {
+        if (isPlaying) return;
+        
+        isPlaying = true;
+        this.style.background = '#dc2626';
+        this.innerHTML = '⏸️';
+        
+        // Simulate audio playback
+        const audioMessage = "Welcome to Gridlabs Studio! We are your trusted digital partner, delivering premium web solutions right to your doorstep. From small paint shops to large textile businesses, we build digital empires that transform your local business into an online success story.";
+        
+        // Text-to-speech simulation
+        if ('speechSynthesis' in window) {
+            const utterance = new SpeechSynthesisUtterance(audioMessage);
+            utterance.rate = 0.9;
+            utterance.pitch = 1;
+            utterance.volume = 0.8;
+            
+            utterance.onend = () => {
+                resetVoiceButton();
+            };
+            
+            speechSynthesis.speak(utterance);
+        } else {
+            // Fallback: just show visual feedback
+            setTimeout(() => {
+                resetVoiceButton();
+            }, 15000);
+        }
+        
+        // Stop button functionality
+        this.addEventListener('click', stopAudio);
+    });
+    
+    function stopAudio() {
+        if ('speechSynthesis' in window) {
+            speechSynthesis.cancel();
+        }
+        resetVoiceButton();
+    }
+    
+    function resetVoiceButton() {
+        isPlaying = false;
+        if (voiceBtn) {
+            voiceBtn.style.background = '#9333ea';
+            voiceBtn.innerHTML = '🎧';
+            voiceBtn.removeEventListener('click', stopAudio);
+        }
+    }
+}
+
+function initializeStickyCall() {
+    const stickyBtn = document.querySelector('.sticky-cta');
+    
+    stickyBtn?.addEventListener('click', function() {
+        // Animate button
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            this.style.transform = '';
+        }, 150);
+        
+        // Open phone dialer
+        window.location.href = 'tel:+919876543210';
+    });
+}
+
+function initializeVCardDownload() {
+    const vCardBtn = document.getElementById('downloadVCard');
+    
+    vCardBtn?.addEventListener('click', function() {
+        const vCardData = `BEGIN:VCARD
+VERSION:3.0
+FN:Gridlabs Studio
+ORG:Gridlabs Studio
+TITLE:Digital Agency
+TEL:+91-9876543210
+EMAIL:hello@gridlabsstudio.com
+URL:https://gridlabsstudio.com
+ADR:;;MG Road;Bangalore;Karnataka;560001;India
+NOTE:Premium web design and digital marketing agency serving small and medium businesses across India
+END:VCARD`;
+        
+        const blob = new Blob([vCardData], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
+        
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'gridlabs-studio.vcf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+        
+        // Show feedback
+        const originalText = this.textContent;
+        this.textContent = '✅ Contact Saved!';
+        this.style.background = '#10b981';
+        
+        setTimeout(() => {
+            this.textContent = originalText;
+            this.style.background = '';
+        }, 2000);
+    });
+}
+
+// ===========================================
+// BUSINESS STATUS & REAL-TIME FEATURES
+// ===========================================
+
+function initializeBusinessStatus() {
+    const statusIndicator = document.getElementById('statusIndicator');
+    const statusText = document.getElementById('statusText');
+    const currentTimeElement = document.getElementById('currentTime');
+    
+    function updateBusinessStatus() {
+        const now = new Date();
+        const hours = now.getHours();
+        const timeString = now.toLocaleTimeString('en-IN', { 
+            hour: '2-digit', 
+            minute: '2-digit',
+            timeZone: 'Asia/Kolkata'
+        });
+        
+        if (currentTimeElement) {
+            currentTimeElement.textContent = timeString;
+        }
+        
+        const isOpen = hours >= businessHours.open && hours < businessHours.close;
+        
+        if (statusIndicator && statusText) {
+            if (isOpen) {
+                statusIndicator.className = 'w-3 h-3 rounded-full bg-green-500';
+                statusText.textContent = `Open - Delivering until ${businessHours.close === 18 ? '6PM' : businessHours.close + 'PM'}`;
+            } else {
+                statusIndicator.className = 'w-3 h-3 rounded-full bg-red-500';
+                const openTime = businessHours.open === 9 ? '9AM' : businessHours.open + 'AM';
+                const openTomorrow = hours >= businessHours.close;
+                statusText.textContent = `Closed - Opens ${openTomorrow ? 'tomorrow' : 'today'} at ${openTime}`;
+            }
+        }
+    }
+    
+    // Update immediately and then every minute
+    updateBusinessStatus();
+    setInterval(updateBusinessStatus, 60000);
+}
+
+// ===========================================
+// MISCELLANEOUS FEATURES
+// ===========================================
+
+function initializeMiscFeatures() {
+    // Add subtle parallax effect to hero section
+    window.addEventListener('scroll', throttle(() => {
+        const scrolled = window.pageYOffset;
+        const heroSection = document.querySelector('.hero-section');
+        
+        if (heroSection) {
+            const rate = scrolled * -0.5;
+            heroSection.style.transform = `translateY(${rate}px)`;
+        }
+    }, 16));
+    
+    // Add hover effects to service cards
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-8px) scale(1.02)';
+            
+            const icon = this.querySelector('.service-icon');
+            if (icon) {
+                icon.style.animation = 'bounce 0.6s ease-out';
+            }
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = '';
+            
+            const icon = this.querySelector('.service-icon');
+            if (icon) {
+                icon.style.animation = '';
+            }
+        });
+    });
+    
+    // Initialize store tour interaction
+    const storeTourBtn = document.querySelector('.store-tour-container button');
+    storeTourBtn?.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Simulate 360° tour start
+        const container = this.closest('.store-tour-container');
+        const overlay = document.createElement('div');
+        overlay.className = 'absolute inset-0 bg-black/80 flex items-center justify-center text-white z-10 rounded-2xl';
+        overlay.innerHTML = `
+            <div class="text-center">
+                <div class="text-4xl mb-4 animate-spin">🌐</div>
+                <h3 class="text-xl font-bold mb-2">Loading Virtual Tour...</h3>
+                <p class="text-gray-300">Experience our workspace in 360°</p>
+            </div>
+        `;
+        
+        container.appendChild(overlay);
+        
+        setTimeout(() => {
+            overlay.innerHTML = `
+                <div class="text-center">
+                    <div class="text-4xl mb-4">🏢</div>
+                    <h3 class="text-xl font-bold mb-4">Virtual Tour Active</h3>
+                    <p class="text-gray-300 mb-4">Use navigation controls to explore</p>
+                    <button class="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-100 close-tour-btn">
+                        Close Tour
+                    </button>
+                </div>
+            `;
+            
+            // Add close functionality
+            const closeBtn = overlay.querySelector('.close-tour-btn');
+            closeBtn.addEventListener('click', function() {
+                overlay.remove();
+            });
+        }, 3000);
+    });
+    
+    // Add keyboard navigation support
+    document.addEventListener('keydown', function(e) {
+        // Tab navigation enhancement
+        if (e.key === 'Tab') {
+            document.body.classList.add('keyboard-navigation');
+        }
+    });
+    
+    document.addEventListener('mousedown', function() {
+        document.body.classList.remove('keyboard-navigation');
+    });
+}
+
+// ===========================================
+// UTILITY FUNCTIONS
+// ===========================================
+
+// Throttle function for performance optimization
+function throttle(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Smooth scroll function
+function smoothScrollTo(targetPosition, duration) {
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
+    
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        
+        // Easing function (ease-in-out)
+        const ease = progress < 0.5 
+            ? 2 * progress * progress 
+            : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+        
+        window.scrollTo(0, startPosition + distance * ease);
+        
+        if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+        }
+    }
+    
+    requestAnimationFrame(animation);
+}
+
+// Debounce function
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Error handling
+window.addEventListener('error', function(e) {
+    console.error('💥 JavaScript Error:', e.error);
+});
+
+// Export functions for testing (if needed)
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+        applyTheme,
+        validateForm,
+        smoothScrollTo,
+        throttle,
+        debounce
+    };
+}
+    </script>
+</body>
+</html>
