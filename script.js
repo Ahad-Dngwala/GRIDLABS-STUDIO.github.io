@@ -1,61 +1,65 @@
 
 
-
-
-// Theme color change logic
-const themeColors = {
-  paintBlue: 'blue-600',
-  woodBrown: 'yellow-800',
-  cementGrey: 'gray-600'
+  const themeColors = {
+  'paintBlue': 'blue-600',
+  'woodBrown': 'yellow-800',
+  'cementGrey': 'gray-600'
 };
 
 document.querySelectorAll('.theme-preview-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    const selectedTheme = btn.getAttribute('data-theme');
-    const color = themeColors[selectedTheme];
-
-    // Update border color
-    document.querySelectorAll('.theme-border').forEach(el => {
-      el.classList.remove('border-blue-600', 'border-yellow-800', 'border-gray-600');
-      el.classList.add(`border-${color}`);
-    });
+    const selected = btn.getAttribute('data-theme');
+    const color = themeColors[selected];
 
     // Update text color
     document.querySelectorAll('.theme-text').forEach(el => {
-      el.classList.remove('text-blue-600', 'text-yellow-800', 'text-gray-600');
+      el.className = el.className.replace(/text-\w+-\d+/g, '').trim();
       el.classList.add(`text-${color}`);
     });
 
-    // Update badge bg
+    // Update badge bg & text color
     document.querySelectorAll('.theme-badge').forEach(el => {
-      el.classList.remove('bg-blue-600/10', 'bg-yellow-800/10', 'bg-gray-600/10');
-      el.classList.add(`bg-${color}/10`);
+      el.className = el.className.replace(/bg-\w+\/\d+/g, '')
+                                 .replace(/text-\w+-\d+/g, '')
+                                 .trim();
+      el.classList.add(`bg-${color.replace(/\d+$/, '')}/10`);
+      el.classList.add(`text-${color}`);
+    });
+
+    // ✅ Update border color for image or others
+    document.querySelectorAll('.theme-border').forEach(el => {
+      el.className = el.className.replace(/border-\w+-\d+/g, '').trim();
+      el.classList.add(`border-${color}`);
     });
   });
 });
 
-// Counter animation (for Clients + Projects)
-document.addEventListener("DOMContentLoaded", function () {
-  const counters = document.querySelectorAll('.counter');
-  counters.forEach(counter => {
-    const updateCount = () => {
-      const target = +counter.getAttribute('data-target');
-      const current = +counter.innerText;
-      const increment = Math.ceil(target / 100);
 
-      if (current < target) {
-        counter.innerText = Math.min(current + increment, target);
-        setTimeout(updateCount, 30);
-      } else {
-        counter.innerText = target;
-      }
-    };
-    updateCount();
-  });
+
+
+  // Add this if not present
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+  counter.innerText = '0';
+
+  const updateCounter = () => {
+    const target = +counter.getAttribute('data-target');
+    const current = +counter.innerText;
+    const increment = Math.ceil(target / 100); // adjust speed
+
+    if (current < target) {
+      counter.innerText = current + increment;
+      counter.style.opacity = "1"; // ✅ FORCE VISIBLE
+      setTimeout(updateCounter, 30);
+    } else {
+      counter.innerText = target;
+      counter.style.opacity = "1"; // ✅ just to be sure
+    }
+  };
+
+  updateCounter();
 });
-
-
-
 
         // Gridlabs Studio - Interactive JavaScript (FINAL FIXED VERSION)
 // Premium Business Portfolio Website
@@ -66,27 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log('🚀 Initializing Gridlabs Studio website...');
-    
-    // Handle preloader
-    const preloader = document.getElementById('preloader');
-    
-    // Check if preloader has been shown in this session
-    if (!sessionStorage.getItem('preloaderShown')) {
-        // Show preloader for 3 seconds
-        setTimeout(() => {
-            preloader.style.opacity = '0';
-            preloader.style.transform = 'translateY(-20px)';
-            setTimeout(() => {
-                preloader.style.display = 'none';
-            }, 500);
-            
-            // Set session storage to skip preloader on refresh
-            sessionStorage.setItem('preloaderShown', 'true');
-        }, 3000);
-    } else {
-        // Skip preloader if already shown in this session
-        preloader.style.display = 'none';
-    }
     
     // Initialize all components with error handling
     try {
