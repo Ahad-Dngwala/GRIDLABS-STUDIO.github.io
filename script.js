@@ -366,31 +366,36 @@ function initializeNavigation() {
 // ===========================================
 
 function initializeAnimations() {
-    // Create intersection observer for scroll animations
     const observerOptions = {
         root: null,
-        rootMargin: '-50px 0px -50px 0px',
-        threshold: 0.1
+        rootMargin: '0px',
+        threshold: 0.15
     };
-    
-    animationObserver = new IntersectionObserver((entries) => {
+
+    const animationObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('animated');
-                
-                // Special animations for specific elements
-                if (entry.target.classList.contains('counter')) {
-                    animateCounter(entry.target);
+                const el = entry.target;
+
+                // Add the fade-in animation class
+                el.classList.add('animated');
+
+                // Counter
+                if (el.classList.contains('counter')) {
+                    animateCounter(el);
                 }
-                
-                if (entry.target.classList.contains('process-step')) {
-                    animateProcessStep(entry.target);
+
+                // Process step entry animation
+                if (el.classList.contains('process-step')) {
+                    animateProcessStep(el);
                 }
+
+                observer.unobserve(el); // Animate only once
             }
         });
     }, observerOptions);
-    
-    // Observe elements that should animate on scroll
+
+    // Target animated elements
     const animateElements = document.querySelectorAll(`
         .service-card,
         .portfolio-item,
@@ -399,42 +404,34 @@ function initializeAnimations() {
         .about-content,
         .about-image-container
     `);
-    
-    animateElements.forEach(el => {
-        el.classList.add('animate-on-scroll');
+
+    animateElements.forEach((el) => {
+        el.classList.add('fade-in'); // Initial state for animation
         animationObserver.observe(el);
     });
-    
-    // Hero section animations
+
+    // Hero section manual fade-in
     setTimeout(() => {
         const heroElements = document.querySelectorAll('.hero-title, .hero-subtitle, .hero-ctas, .hindi-quote');
         heroElements.forEach((el, index) => {
-            setTimeout(() => {
-                el.style.opacity = '1';
-                el.style.transform = 'translateY(0)';
-            }, index * 200);
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+            el.style.transition = `opacity 0.6s ease ${index * 200}ms, transform 0.6s ease ${index * 200}ms`;
         });
     }, 300);
 }
 
-function animateProcessStep(element) {
-    const icon = element.querySelector('.process-icon');
-    const arrow = element.querySelector('.process-arrow');
-    
-    if (icon) {
-        icon.style.animation = 'bounce 0.6s ease-out';
+function animateProcessStep(stepEl) {
+    const number = stepEl.querySelector('.process-step-number');
+    if (number) {
+        number.style.transform = 'translateY(-50%) scale(1.1)';
+        number.style.transition = 'transform 0.3s ease';
         setTimeout(() => {
-            icon.style.animation = '';
+            number.style.transform = 'translateY(-50%) scale(1)';
         }, 600);
     }
-    
-    if (arrow) {
-        setTimeout(() => {
-            arrow.style.opacity = '1';
-            arrow.style.transform = 'translateX(0)';
-        }, 300);
-    }
 }
+
 
 // ===========================================
 // COUNTER ANIMATIONS
@@ -480,119 +477,82 @@ function animateCounter(counter) {
 // ===========================================
 
 function initializeSliders() {
-    console.log('🔧 Initializing sliders...');
-    setTimeout(() => {
-        initializeBeforeAfterSlider();
-    }, 500);
-}
+  const sliders = document.querySelectorAll('.before-after-container');
 
-function initializeBeforeAfterSlider() {
-    console.log('🔧 Looking for before/after slider elements...');
-    
-    const sliderContainer = document.querySelector('.before-after-container');
-    const handle = document.querySelector('.slider-handle');
-    const afterImage = document.querySelector('.after-image');
-    
-    console.log('Slider container:', sliderContainer);
-    console.log('Handle:', handle);
-    console.log('After image:', afterImage);
-    
-    if (!sliderContainer || !handle || !afterImage) {
-        console.error('❌ Before/after slider elements not found');
-        return;
-    }
-    
+  sliders.forEach((sliderContainer) => {
+    const handle = sliderContainer.querySelector('.slider-handle');
+    const afterImage = sliderContainer.querySelector('.after-layer');
+
+    if (!handle || !afterImage) return;
+
     let isDragging = false;
-    let currentX = 50; // Start at 50%
-    
-    // Initialize slider position
+    let currentX = 50;
+
     updateSlider(currentX);
-    
-    function startDrag(e) {
-        console.log('🖱️ Start drag');
-        e.preventDefault();
-        isDragging = true;
-        handle.style.cursor = 'grabbing';
-        document.body.style.cursor = 'grabbing';
-        handle.style.transform = 'translate(-50%, -50%) scale(1.1)';
-        
-        // Prevent text selection
-        document.body.style.userSelect = 'none';
-    }
-    
-    function drag(e) {
-        if (!isDragging) return;
-        
-        e.preventDefault();
-        
-        const clientX = e.type === 'mousemove' ? e.clientX : (e.touches && e.touches[0] ? e.touches[0].clientX : 0);
-        const sliderRect = sliderContainer.getBoundingClientRect();
-        const relativeX = clientX - sliderRect.left;
-        const percentage = Math.max(0, Math.min(100, (relativeX / sliderRect.width) * 100));
-        
-        currentX = percentage;
-        updateSlider(percentage);
-        
-        console.log('Dragging to:', percentage + '%');
-    }
-    
-    function stopDrag() {
-        console.log('🖱️ Stop drag');
-        isDragging = false;
-        handle.style.cursor = 'grab';
-        document.body.style.cursor = '';
-        handle.style.transform = 'translate(-50%, -50%) scale(1)';
-        document.body.style.userSelect = '';
-    }
-    
+
     function updateSlider(percentage) {
-        afterImage.style.clipPath = `polygon(${percentage}% 0%, 100% 0%, 100% 100%, ${percentage}% 100%)`;
-        handle.style.left = `${percentage}%`;
+      afterImage.style.clipPath = `polygon(${percentage}% 0%, 100% 0%, 100% 100%, ${percentage}% 100%)`;
+      handle.style.left = `${percentage}%`;
     }
-    
-    // Remove any existing event listeners first
-    handle.removeEventListener('mousedown', startDrag);
-    document.removeEventListener('mousemove', drag);
-    document.removeEventListener('mouseup', stopDrag);
-    handle.removeEventListener('touchstart', startDrag);
-    document.removeEventListener('touchmove', drag);
-    document.removeEventListener('touchend', stopDrag);
-    
-    // Add event listeners
+
+    function startDrag(e) {
+      isDragging = true;
+      document.body.style.userSelect = 'none';
+      handle.style.cursor = 'grabbing';
+      handle.style.transform = 'translate(-50%, -50%) scale(1.1)';
+    }
+
+    function drag(e) {
+      if (!isDragging) return;
+
+      const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+      const rect = sliderContainer.getBoundingClientRect();
+      const relativeX = clientX - rect.left;
+      const percentage = Math.max(0, Math.min(100, (relativeX / rect.width) * 100));
+      currentX = percentage;
+      updateSlider(currentX);
+    }
+
+    function stopDrag() {
+      isDragging = false;
+      document.body.style.userSelect = '';
+      handle.style.cursor = 'grab';
+      handle.style.transform = 'translate(-50%, -50%) scale(1)';
+    }
+
     handle.addEventListener('mousedown', startDrag);
     document.addEventListener('mousemove', drag);
     document.addEventListener('mouseup', stopDrag);
-    
-    // Touch events
-    handle.addEventListener('touchstart', startDrag, { passive: false });
+
+    handle.addEventListener('touchstart', startDrag, { passive: true });
     document.addEventListener('touchmove', drag, { passive: false });
     document.addEventListener('touchend', stopDrag);
-    
-    console.log('✅ Before/after slider initialized successfully');
-    
-    // Demo animation after delay
+
+    // Optional demo animation
     setTimeout(() => {
-        if (!isDragging) {
-            console.log('🎬 Starting demo animation');
-            let demoStep = 0;
-            const demoInterval = setInterval(() => {
-                if (isDragging) {
-                    clearInterval(demoInterval);
-                    return;
-                }
-                
-                demoStep++;
-                const demoPercentage = 50 + Math.sin(demoStep * 0.2) * 25;
-                updateSlider(demoPercentage);
-                
-                if (demoStep > 30) {
-                    clearInterval(demoInterval);
-                    updateSlider(50); // Return to center
-                }
-            }, 150);
-        }
+      if (!isDragging) {
+        let demoStep = 0;
+        const demoInterval = setInterval(() => {
+          if (isDragging) {
+            clearInterval(demoInterval);
+            return;
+          }
+
+          demoStep++;
+          const demoPercentage = 50 + Math.sin(demoStep * 0.2) * 25;
+          updateSlider(demoPercentage);
+
+          if (demoStep > 30) {
+            clearInterval(demoInterval);
+            updateSlider(50);
+          }
+        }, 150);
+      }
     }, 3000);
+  });
 }
+
+
 
 // ===========================================
 // CAROUSELS
