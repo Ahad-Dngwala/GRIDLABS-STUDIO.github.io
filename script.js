@@ -1,5 +1,7 @@
 
 
+
+
 // Theme color change logic
 const themeColors = {
   paintBlue: 'blue-600',
@@ -65,6 +67,26 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', function() {
     console.log('🚀 Initializing Gridlabs Studio website...');
     
+    // Handle preloader
+    const preloader = document.getElementById('preloader');
+    
+    // Check if preloader has been shown in this session
+    if (!sessionStorage.getItem('preloaderShown')) {
+        // Show preloader for 3 seconds
+        setTimeout(() => {
+            preloader.style.opacity = '0';
+            preloader.style.transform = 'translateY(-20px)';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+            
+            // Set session storage to skip preloader on refresh
+            sessionStorage.setItem('preloaderShown', 'true');
+        }, 3000);
+    } else {
+        // Skip preloader if already shown in this session
+        preloader.style.display = 'none';
+    }
     
     // Initialize all components with error handling
     try {
@@ -1419,4 +1441,3 @@ if (typeof module !== 'undefined' && module.exports) {
         debounce
     };
 }
-    
