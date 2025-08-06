@@ -1,4 +1,144 @@
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const whatsappBtn = document.getElementById('toggleWhatsapp');
+    const whatsappOptions = document.getElementById('whatsappOptions');
+    const whatsappContainer = document.getElementById('whatsappButton');
+
+    const messages = [
+      "Hi! Please share your store location with me.",
+      "Hello! I'd like to see paint shade options.",
+      "Hi! I want to place an order. Please help me."
+    ];
+
+    let isOptionsOpen = false;
+
+    // Replace old click listeners
+    const newBtn = whatsappBtn.cloneNode(true);
+    whatsappBtn.parentNode.replaceChild(newBtn, whatsappBtn);
+
+    newBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      isOptionsOpen = !isOptionsOpen;
+      whatsappOptions.classList.toggle('hidden', !isOptionsOpen);
+
+      newBtn.style.transform = 'scale(0.95) rotate(10deg)';
+      setTimeout(() => newBtn.style.transform = 'scale(1)', 150);
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!whatsappContainer.contains(e.target) && isOptionsOpen) {
+        whatsappOptions.classList.add('hidden');
+        isOptionsOpen = false;
+      }
+    });
+
+    setTimeout(() => {
+      document.querySelectorAll('.whatsapp-option').forEach((link, i) => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const msg = encodeURIComponent(messages[i] || "Hello from Gridlabs Studio!");
+          const url = `https://wa.me/919409509069?text=${msg}`;
+          window.open(url, '_blank');
+          whatsappOptions.classList.add('hidden');
+          isOptionsOpen = false;
+        });
+      });
+    }, 100);
+  });
+</script>
+
+
+<!-- Sticky CTA Pill -->
+<div class="fixed bottom-6 left-6 z-50">
+    <button class="sticky-cta bg-primary/80 backdrop-blur text-theme px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-primary/90 transition-colors border border-white/20 dark:border-black/20">
+        📞 Call Now
+    </button>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const callButton = document.querySelector(".sticky-cta");
+
+    if (!callButton) {
+      console.warn("📞 Sticky CTA button not found!");
+      return;
+    }
+
+    callButton.addEventListener("click", () => {
+      console.log("📞 Call Now button clicked!");
+
+      // Add a small animation effect
+      callButton.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        callButton.style.transform = 'scale(1)';
+      }, 120);
+
+      // OPTIONAL: Initiate a call (mobile only)
+      window.location.href = "tel:+919409509069";
+    });
+  });
+</script>
+
+
+<!-- Voice Assistant Button -->
+<div class="fixed bottom-24 right-6 z-50">
+  <div class="relative group">
+    <div class="absolute inset-0 rounded-full animate-ping bg-purple-500 opacity-30 group-hover:opacity-50 transition"></div>
+    <button id="voiceButton" class="w-14 h-14 bg-purple-600 text-white rounded-full flex items-center justify-center text-xl shadow-xl hover:bg-purple-700 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-800">
+      🎙️
+    </button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const voiceBtn = document.getElementById('voiceButton');
+    let isSpeaking = false;
+
+    voiceBtn.addEventListener('click', () => {
+      if (isSpeaking) {
+        speechSynthesis.cancel();
+        resetVoice();
+        return;
+      }
+
+      isSpeaking = true;
+      voiceBtn.style.backgroundColor = '#dc2626';
+      voiceBtn.innerHTML = '⏸️';
+
+      const message = new SpeechSynthesisUtterance("Welcome to Gridlabs Studio! We are your trusted digital partner, delivering premium web solutions right to your doorstep. From small paint shops to large textile businesses, we build digital empires that transform your local business into an online success story.");
+      message.rate = 0.9;
+      message.pitch = 1;
+      message.volume = 0.9;
+
+      message.onend = () => resetVoice();
+      speechSynthesis.speak(message);
+    });
+
+    function resetVoice() {
+      isSpeaking = false;
+      voiceBtn.style.backgroundColor = '#9333ea';
+      voiceBtn.innerHTML = '🎙️';
+    }
+  });
+</script>
+
+
+    <!-- Portfolio Lightbox Modal -->
+    <div id="portfolioModal" class="modal fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-6">
+        <div class="modal-content bg-surface rounded-2xl max-w-4xl w-full max-h-full overflow-auto">
+            <div class="modal-header p-6 border-b border-card-border flex justify-between items-center">
+                <h3 id="modalTitle" class="text-2xl font-bold"></h3>
+                <button id="closeModal" class="text-text-secondary hover:text-text text-2xl">×</button>
+            </div>
+            <div class="modal-body p-6">
+                <div id="modalContent" class="space-y-6"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
 
   const themeColors = {
   'paintBlue': 'blue-600',
@@ -558,65 +698,138 @@ function initializeSliders() {
 // CAROUSELS
 // ===========================================
 
-function initializeCarousels() {
-    initializeTestimonialCarousel();
-}
 
-function initializeTestimonialCarousel() {
-    const carousel = document.getElementById('testimonialCarousel');
-    const prevBtn = document.querySelector('.testimonial-prev');
-    const nextBtn = document.querySelector('.testimonial-next');
-    
-    if (!carousel) return;
-    
-    let currentSlide = 0;
-    const slides = carousel.querySelectorAll('.testimonial-slide');
-    const totalSlides = slides.length;
-    
-    // Auto-rotation
-    let autoRotateInterval = setInterval(nextSlide, 5000);
-    
-    // Pause on hover
-    carousel.addEventListener('mouseenter', () => {
-        clearInterval(autoRotateInterval);
-    });
-    
-    carousel.addEventListener('mouseleave', () => {
-        autoRotateInterval = setInterval(nextSlide, 5000);
-    });
-    
-    // Navigation buttons
-    prevBtn?.addEventListener('click', prevSlide);
-    nextBtn?.addEventListener('click', nextSlide);
-    
-    function nextSlide() {
-        slides[currentSlide]?.classList.remove('active');
-        currentSlide = (currentSlide + 1) % totalSlides;
-        slides[currentSlide]?.classList.add('active');
-        
-        // Animate button
-        if (nextBtn) {
-            nextBtn.style.transform = 'scale(0.9)';
-            setTimeout(() => {
-                nextBtn.style.transform = '';
-            }, 150);
-        }
+  const slider = document.querySelector('.testimonial-container');
+  const cards = document.querySelectorAll('.testimonial-card');
+  const next = document.querySelector('.testimonial-next');
+  const prev = document.querySelector('.testimonial-prev');
+  const dotsContainer = document.querySelector('.testimonial-dots');
+
+  let index = 0;
+  const totalCards = cards.length;
+  let maxIndex = 0;
+  let autoSlideInterval;
+  let visibleCards = getVisibleCardCount();
+
+  function getVisibleCardCount() {
+    if (window.innerWidth >= 1024) return 3;
+    if (window.innerWidth >= 640) return 2;
+    return 1;
+  }
+
+  function updateSlider() {
+    visibleCards = getVisibleCardCount();
+    const cardWidth = cards[0].offsetWidth + 21;
+    slider.style.transform = `translateX(-${index * cardWidth}px)`;
+    maxIndex = totalCards - visibleCards;
+    updateDots();
+  }
+
+  function nextSlide() {
+    index = (index + 1) > maxIndex ? 0 : index + 1;
+    updateSlider();
+  }
+
+  function prevSlide() {
+    index = (index - 1) < 0 ? maxIndex : index - 1;
+    updateSlider();
+  }
+
+  function startAutoSlide() {
+    autoSlideInterval = setInterval(nextSlide, 2000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  next.addEventListener("click", () => {
+    stopAutoSlide();
+    nextSlide();
+    startAutoSlide();
+  });
+
+  prev.addEventListener("click", () => {
+    stopAutoSlide();
+    prevSlide();
+    startAutoSlide();
+  });
+
+  // Hover Pause
+  slider.parentElement.addEventListener("mouseenter", stopAutoSlide);
+  slider.parentElement.addEventListener("mouseleave", startAutoSlide);
+
+  // Recalculate on Resize
+  window.addEventListener("resize", () => {
+    updateSlider();
+    generateDots();
+  });
+
+  // ==================
+  // 👆 SWIPE SUPPORT
+  // ==================
+  let startX = 0;
+
+  slider.addEventListener('touchstart', (e) => {
+    stopAutoSlide();
+    startX = e.touches[0].clientX;
+  });
+
+  slider.addEventListener('touchend', (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = endX - startX;
+
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        prevSlide();
+      } else {
+        nextSlide();
+      }
     }
-    
-    function prevSlide() {
-        slides[currentSlide]?.classList.remove('active');
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        slides[currentSlide]?.classList.add('active');
-        
-        // Animate button
-        if (prevBtn) {
-            prevBtn.style.transform = 'scale(0.9)';
-            setTimeout(() => {
-                prevBtn.style.transform = '';
-            }, 150);
-        }
+
+    startAutoSlide();
+  });
+
+  // ==========================
+  // 🔘 DOTS GENERATION
+  // ==========================
+  function generateDots() {
+    dotsContainer.innerHTML = '';
+    const dotCount = totalCards - visibleCards + 1;
+
+    for (let i = 0; i < dotCount; i++) {
+      const dot = document.createElement('div');
+      dot.className = 'w-3 h-3 rounded-full bg-[var(--theme-accent)] opacity-70 transition-all';
+      dot.addEventListener('click', () => {
+        index = i;
+        updateSlider();
+        stopAutoSlide();
+        startAutoSlide();
+      });
+      dotsContainer.appendChild(dot);
     }
-}
+
+    updateDots();
+  }
+
+  function updateDots() {
+    const dots = dotsContainer.querySelectorAll('div');
+    dots.forEach((dot, i) => {
+      if (i === index) {
+        dot.classList.add('bg-primary', 'opacity-100', 'scale-150');
+      } else {
+        dot.classList.remove('bg-primary', 'opacity-100', 'scale-150');
+      }
+    });
+  }
+
+  // ===================
+  // 🚀 INIT
+  // ===================
+  generateDots();
+  updateSlider();
+  startAutoSlide();
+
 
 // ===========================================
 // MODALS & LIGHTBOXES (FIXED)
@@ -973,174 +1186,6 @@ function submitForm(data, form, successMessage) {
 // FLOATING ACTION BUTTONS (FIXED)
 // ===========================================
 
-function initializeFloatingActions() {
-    console.log('🔧 Initializing floating actions...');
-    
-    setTimeout(() => {
-        initializeWhatsAppChat();
-        initializeVoiceButton();
-        initializeStickyCall();
-        initializeVCardDownload();
-    }, 500);
-}
-
-function initializeWhatsAppChat() {
-    console.log('💬 Initializing WhatsApp chat...');
-    
-    const whatsappBtn = document.querySelector('.whatsapp-btn');
-    const whatsappOptions = document.getElementById('whatsappOptions');
-    const whatsappLinks = document.querySelectorAll('.whatsapp-option');
-    
-    console.log('WhatsApp button:', whatsappBtn);
-    console.log('WhatsApp options:', whatsappOptions);
-    console.log('WhatsApp links:', whatsappLinks.length);
-    
-    let isOptionsOpen = false;
-    
-    if (!whatsappBtn || !whatsappOptions) {
-        console.error('❌ WhatsApp elements not found');
-        return;
-    }
-    
-    // Remove existing event listeners
-    const newWhatsappBtn = whatsappBtn.cloneNode(true);
-    whatsappBtn.parentNode.replaceChild(newWhatsappBtn, whatsappBtn);
-    
-    newWhatsappBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        console.log('💬 WhatsApp button clicked, current state:', isOptionsOpen);
-        
-        isOptionsOpen = !isOptionsOpen;
-        
-        if (isOptionsOpen) {
-            whatsappOptions.classList.remove('hidden');
-            this.style.transform = 'scale(0.9) rotate(15deg)';
-            console.log('✅ WhatsApp options opened');
-            
-            setTimeout(() => {
-                this.style.transform = 'scale(1) rotate(0deg)';
-            }, 150);
-        } else {
-            whatsappOptions.classList.add('hidden');
-            console.log('❌ WhatsApp options closed');
-        }
-    });
-    
-    // Close options when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('#whatsappButton') && isOptionsOpen) {
-            whatsappOptions.classList.add('hidden');
-            isOptionsOpen = false;
-            console.log('❌ WhatsApp options closed (click outside)');
-        }
-    });
-    
-    // WhatsApp option links
-    const whatsappMessages = [
-        'Hi! Please share your store location with me.',
-        'Hello! I\'m interested in seeing available paint color shades.',
-        'Hi! I would like to place an order. Please assist me.'
-    ];
-    
-    // Re-query the links after DOM manipulation
-    setTimeout(() => {
-        const updatedWhatsappLinks = document.querySelectorAll('.whatsapp-option');
-        console.log('Updated WhatsApp links:', updatedWhatsappLinks.length);
-        
-        updatedWhatsappLinks.forEach((link, index) => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                console.log('🎯 WhatsApp option clicked:', index);
-                
-                const message = encodeURIComponent(whatsappMessages[index] || 'Hello from Gridlabs Studio!');
-                const whatsappURL = `https://wa.me/919876543210?text=${message}`;
-                window.open(whatsappURL, '_blank');
-                
-                // Close options
-                whatsappOptions.classList.add('hidden');
-                isOptionsOpen = false;
-                
-                // Animate click
-                this.style.transform = 'scale(0.95)';
-                setTimeout(() => {
-                    this.style.transform = '';
-                }, 150);
-            });
-        });
-    }, 100);
-    
-    console.log('✅ WhatsApp chat initialized');
-}
-
-function initializeVoiceButton() {
-    const voiceBtn = document.getElementById('voiceButton');
-    let isPlaying = false;
-    
-    voiceBtn?.addEventListener('click', function() {
-        if (isPlaying) return;
-        
-        isPlaying = true;
-        this.style.background = '#dc2626';
-        this.innerHTML = '⏸️';
-        
-        // Simulate audio playback
-        const audioMessage = "Welcome to Gridlabs Studio! We are your trusted digital partner, delivering premium web solutions right to your doorstep. From small paint shops to large textile businesses, we build digital empires that transform your local business into an online success story.";
-        
-        // Text-to-speech simulation
-        if ('speechSynthesis' in window) {
-            const utterance = new SpeechSynthesisUtterance(audioMessage);
-            utterance.rate = 0.9;
-            utterance.pitch = 1;
-            utterance.volume = 0.8;
-            
-            utterance.onend = () => {
-                resetVoiceButton();
-            };
-            
-            speechSynthesis.speak(utterance);
-        } else {
-            // Fallback: just show visual feedback
-            setTimeout(() => {
-                resetVoiceButton();
-            }, 15000);
-        }
-        
-        // Stop button functionality
-        this.addEventListener('click', stopAudio);
-    });
-    
-    function stopAudio() {
-        if ('speechSynthesis' in window) {
-            speechSynthesis.cancel();
-        }
-        resetVoiceButton();
-    }
-    
-    function resetVoiceButton() {
-        isPlaying = false;
-        if (voiceBtn) {
-            voiceBtn.style.background = '#9333ea';
-            voiceBtn.innerHTML = '🎧';
-            voiceBtn.removeEventListener('click', stopAudio);
-        }
-    }
-}
-
-function initializeStickyCall() {
-    const stickyBtn = document.querySelector('.sticky-cta');
-    
-    stickyBtn?.addEventListener('click', function() {
-        // Animate button
-        this.style.transform = 'scale(0.95)';
-        setTimeout(() => {
-            this.style.transform = '';
-        }, 150);
-        
-        // Open phone dialer
-        window.location.href = 'tel:+919876543210';
-    });
-}
 
 function initializeVCardDownload() {
     const vCardBtn = document.getElementById('downloadVCard');
