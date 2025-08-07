@@ -1,144 +1,4 @@
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const whatsappBtn = document.getElementById('toggleWhatsapp');
-    const whatsappOptions = document.getElementById('whatsappOptions');
-    const whatsappContainer = document.getElementById('whatsappButton');
-
-    const messages = [
-      "Hi! Please share your store location with me.",
-      "Hello! I'd like to see paint shade options.",
-      "Hi! I want to place an order. Please help me."
-    ];
-
-    let isOptionsOpen = false;
-
-    // Replace old click listeners
-    const newBtn = whatsappBtn.cloneNode(true);
-    whatsappBtn.parentNode.replaceChild(newBtn, whatsappBtn);
-
-    newBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      isOptionsOpen = !isOptionsOpen;
-      whatsappOptions.classList.toggle('hidden', !isOptionsOpen);
-
-      newBtn.style.transform = 'scale(0.95) rotate(10deg)';
-      setTimeout(() => newBtn.style.transform = 'scale(1)', 150);
-    });
-
-    document.addEventListener('click', (e) => {
-      if (!whatsappContainer.contains(e.target) && isOptionsOpen) {
-        whatsappOptions.classList.add('hidden');
-        isOptionsOpen = false;
-      }
-    });
-
-    setTimeout(() => {
-      document.querySelectorAll('.whatsapp-option').forEach((link, i) => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          const msg = encodeURIComponent(messages[i] || "Hello from Gridlabs Studio!");
-          const url = `https://wa.me/919409509069?text=${msg}`;
-          window.open(url, '_blank');
-          whatsappOptions.classList.add('hidden');
-          isOptionsOpen = false;
-        });
-      });
-    }, 100);
-  });
-</script>
-
-
-<!-- Sticky CTA Pill -->
-<div class="fixed bottom-6 left-6 z-50">
-    <button class="sticky-cta bg-primary/80 backdrop-blur text-theme px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-primary/90 transition-colors border border-white/20 dark:border-black/20">
-        📞 Call Now
-    </button>
-</div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const callButton = document.querySelector(".sticky-cta");
-
-    if (!callButton) {
-      console.warn("📞 Sticky CTA button not found!");
-      return;
-    }
-
-    callButton.addEventListener("click", () => {
-      console.log("📞 Call Now button clicked!");
-
-      // Add a small animation effect
-      callButton.style.transform = 'scale(0.95)';
-      setTimeout(() => {
-        callButton.style.transform = 'scale(1)';
-      }, 120);
-
-      // OPTIONAL: Initiate a call (mobile only)
-      window.location.href = "tel:+919409509069";
-    });
-  });
-</script>
-
-
-<!-- Voice Assistant Button -->
-<div class="fixed bottom-24 right-6 z-50">
-  <div class="relative group">
-    <div class="absolute inset-0 rounded-full animate-ping bg-purple-500 opacity-30 group-hover:opacity-50 transition"></div>
-    <button id="voiceButton" class="w-14 h-14 bg-purple-600 text-white rounded-full flex items-center justify-center text-xl shadow-xl hover:bg-purple-700 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-800">
-      🎙️
-    </button>
-  </div>
-</div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const voiceBtn = document.getElementById('voiceButton');
-    let isSpeaking = false;
-
-    voiceBtn.addEventListener('click', () => {
-      if (isSpeaking) {
-        speechSynthesis.cancel();
-        resetVoice();
-        return;
-      }
-
-      isSpeaking = true;
-      voiceBtn.style.backgroundColor = '#dc2626';
-      voiceBtn.innerHTML = '⏸️';
-
-      const message = new SpeechSynthesisUtterance("Welcome to Gridlabs Studio! We are your trusted digital partner, delivering premium web solutions right to your doorstep. From small paint shops to large textile businesses, we build digital empires that transform your local business into an online success story.");
-      message.rate = 0.9;
-      message.pitch = 1;
-      message.volume = 0.9;
-
-      message.onend = () => resetVoice();
-      speechSynthesis.speak(message);
-    });
-
-    function resetVoice() {
-      isSpeaking = false;
-      voiceBtn.style.backgroundColor = '#9333ea';
-      voiceBtn.innerHTML = '🎙️';
-    }
-  });
-</script>
-
-
-    <!-- Portfolio Lightbox Modal -->
-    <div id="portfolioModal" class="modal fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-6">
-        <div class="modal-content bg-surface rounded-2xl max-w-4xl w-full max-h-full overflow-auto">
-            <div class="modal-header p-6 border-b border-card-border flex justify-between items-center">
-                <h3 id="modalTitle" class="text-2xl font-bold"></h3>
-                <button id="closeModal" class="text-text-secondary hover:text-text text-2xl">×</button>
-            </div>
-            <div class="modal-body p-6">
-                <div id="modalContent" class="space-y-6"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Scripts -->
-    <script>
 
   const themeColors = {
   'paintBlue': 'blue-600',
@@ -1185,6 +1045,45 @@ function submitForm(data, form, successMessage) {
 // ===========================================
 // FLOATING ACTION BUTTONS (FIXED)
 // ===========================================
+
+  const toggleBtn = document.getElementById("toggleWhatsapp");
+  const dropdown = document.getElementById("whatsappOptions");
+
+  toggleBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    dropdown.classList.toggle("hidden");
+  });
+
+  // Close dropdown on outside click
+  document.addEventListener("click", (e) => {
+    if (!dropdown.contains(e.target) && !toggleBtn.contains(e.target)) {
+      dropdown.classList.add("hidden");
+    }
+  });
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const callButton = document.querySelector(".sticky-cta");
+
+    if (!callButton) {
+      console.warn("📞 Sticky CTA button not found!");
+      return;
+    }
+
+    callButton.addEventListener("click", () => {
+      console.log("📞 Call Now button clicked!");
+
+      // Add a small animation effect
+      callButton.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        callButton.style.transform = 'scale(1)';
+      }, 120);
+
+      // OPTIONAL: Initiate a call (mobile only)
+      window.location.href = "tel:+919409509069";
+    });
+  });
+
 
 
 function initializeVCardDownload() {

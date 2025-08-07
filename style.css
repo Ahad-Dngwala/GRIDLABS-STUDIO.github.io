@@ -1227,9 +1227,12 @@ select.form-control {
 }
 .text-gradient {
   background: linear-gradient(to right, var(--theme-primary), var(--theme-accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;                /* ✅ Standard */
+  -webkit-background-clip: text;        /* ✅ For Safari/Chrome */
+  -webkit-text-fill-color: transparent; /* ✅ For WebKit browsers */
+  color: transparent;                   /* ✅ Backup for other browsers */
 }
+
 
 /* Process Section Styles */
 :root {
